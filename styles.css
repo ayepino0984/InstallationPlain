@@ -171,14 +171,14 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0;
-  background: rgba(217, 217, 217, 0.1);
+  background: rgba(217, 217, 217, 0.25);
   backdrop-filter: blur(4.211065292358398px);
 }
 
 .projectDetailsTable {
   width: 100%;
   padding: 10px 0;
-  background: rgba(217, 217, 217, 0.1);
+  background: rgba(217, 217, 217, 0.25);
   backdrop-filter: blur(4.211065292358398px);
 }
 
@@ -207,15 +207,14 @@ header {
 
 .projectDetailsTr th,
 .projectDetailsTr td {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #fff;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 1.364px;
+  height: 20px;
 }
 
 .projectDetailsTable {
@@ -223,14 +222,116 @@ header {
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
 }
 
-.bgTrTd {
-  background-color: #2c2c2e;
-}
 
-/********SECTION 3 ***********/
+
+/******Section3****/
 
 .sectionThreeWithBackground {
-  background-image: url("src/img/section3_background.png"); /* Ruta a tu imagen de fondo */
+  background-image: url("src/img/section3_background.png");
+  background-size: cover;
+  background-position: center;
+  color: #323232;
+  padding-bottom: 8px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tableSow {
+  background: #bebebc;
+  padding: 0;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+}
+
+.informationSection3 {
+  flex: 0 0 calc(50% - 10px); /* Evitar que se encogen, pero permitir que ocupen el 50% menos 10px de margen */
+  padding: 50px 60px;
+}
+
+.soldSowHead {
+  background: #b3b2b0; /* rgba(156, 156, 156, 0.93); */
+  backdrop-filter: blur(4.211065292358398px);
+  /*width: 53.6875rem;*/
+  height: 3.125rem;
+}
+
+.bgH3 {
+  background: #a1a1a1; /* rgba(156, 156, 156, 0.93);*/
+  backdrop-filter: blur(4.211065292358398px);
+  padding: 5px 0;
+}
+
+.section3TitleTable {
+  color: #343434;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+
+
+.soldSowTr th {
+  color: #464646;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.364px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 20px;
+}
+
+.soldSowTr td{
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 20px;
+  font-size: 1rem;
+
+}
+
+.soldSowTr th:nth-child(2),
+.soldSowTr td:nth-child(2) {
+  text-align: right;
+}
+
+.textSow {
+  color: #323232;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08525rem;
+  padding: 0 10px;
+}
+
+.bgTr1 {
+  background: #ababa8;
+}
+
+.bgTr {
+  color: #464646;
+  font-family: DM Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08525rem;
+}
+
+/********SECTION 4 ***********/
+
+.sectionFourWithBackground {
+  background-image: url("src/img/section4_background.png"); /* Ruta a tu imagen de fondo */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
 
   color: #fff; /* Color del texto dentro de la sección */
@@ -270,16 +371,15 @@ header {
 
 .addersTr td {
   padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   background-color: #2c2c2e;
   color: #fff;
   font-family: DM Sans;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 1.364px;
+  height: 20px;
 }
 
 .totalContainer {
@@ -301,110 +401,183 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 1.98px;
+  margin: 0;
 }
 
-.projectDetailsTr td:nth-child(1),.projectDetailsTr th:nth-child(1){
+.totalAuxiliary {
+  padding: 16px;
+  margin-top: 32px;
+}
+
+.projectDetailsTr td:nth-child(1),
+.projectDetailsTr th:nth-child(1) {
   text-align: left;
-
 }
 
-.projectDetailsTr td:nth-child(2),.projectDetailsTr th:nth-child(2){
+.projectDetailsTr td:nth-child(2),
+.projectDetailsTr th:nth-child(2) {
   text-align: right;
-
 }
 
-.projectDetailsTr td:nth-child(3),.projectDetailsTr th:nth-child(3){
+.projectDetailsTr td:nth-child(3),
+.projectDetailsTr th:nth-child(3) {
   text-align: right;
-
 }
 
-table,th,td{
-  padding: 8px;
+
+
+.bgTrTd {
+  background: #2f2c2c;
 }
 
-.bgTrTd{
-  background: #5A5A5A;
+.auxiliaryProducts {
+  width: 100%;
+  margin-top: 32px;
+  background: rgba(33, 33, 33, 0.69);
+  backdrop-filter: blur(7.5px);
 }
 
-/******Section3****/
-
-.sectionFourWithBackground {
-    background-image: url("src/img/section3_background.png");
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
-    background-position: center; /* Centra la imagen en la sección */
-    color: #323232; /* Color del texto dentro de la sección */
-    padding: 50px; /* Espacio interior para el contenido de la sección */
-    padding-bottom: 8px;
-    min-height: 100vh;
-  }
-  
-.tableSow{
-    background: #bebebc; 
-    padding:0; 
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 14px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
+.auxiliaryProductsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 11.23px 11.23px;
+  background: rgba(217, 217, 217, 0.17);
+  backdrop-filter: blur(4.211065292358398px);
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.informationSection3{
-    width: 50%;
-    max-height: 100vh;
-    padding: 50px 60px;
+.auxiliaryProductsInformation {
+  width: 60%;
 }
 
-.soldSowHead{
-    border-radius: 0rem 0rem 0.70188rem 0.70188rem;
-    background: #b3b2b0; /* rgba(156, 156, 156, 0.93); */
-    backdrop-filter: blur(4.211065292358398px);
-    /*width: 53.6875rem;*/
-    height: 3.125rem;
+.imageContainer {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bgH3{
-    border-radius: 0rem 0rem 0.70188rem 0.70188rem;
-    background: #a1a1a1;/* rgba(156, 156, 156, 0.93);*/
-    backdrop-filter: blur(4.211065292358398px);
-    padding: 5px 0;
+.imageContainer img {
+  width: 100%;
+  height: auto;
 }
 
-.section3TitleTable{
-    color: #343434;
-    text-align: center;
-    font-family: Lexend;
-    font-size: 1.625rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0; 
+.roof,
+.exterior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: rgba(98, 98, 98, 0.87);
+  backdrop-filter: blur(7.5px);
 }
 
-.soldSowTr{
-    width: 53.68744rem;
-    height: 2.00119rem;
-    flex-shrink: 0;
+.roof p,
+.exterior p {
+  color: #fff;
+  font-family: Lexend;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  padding: 16px;
 }
 
-.textSow{
-    color: #323232;
-    font-family: DM Sans;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.08525rem;
-    padding: 0 10px;
+.auxiliaryList {
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.18);
+  backdrop-filter: blur(7.5px);
+  padding: 8px 16px;
+  margin-left: 32px;
 }
 
-.bgTr1{
-    background: #ababa8;
+.auxiliaryList div:nth-child(1) {
+  margin-top: 0;
 }
 
-.bgTr{
-    color: #464646;
-    font-family: DM Sans;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.08525rem;
+.auxiliaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.auxiliaryItem p {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.364px;
+  margin: 0;
+}
+
+.sectionFiveWithBackground {
+  background-image: url("src/img/section5_background.png"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #fff; /* Color del texto dentro de la sección */
+  padding: 50px; /* Espacio interior para el contenido de la sección */
+  padding-bottom: 8px;
+  min-height: 100vh;
+}
+
+.tableContainer {
+  width: 100%;
+  background-color: #afaaaa96;
+  backdrop-filter: blur(4.211065292358398px);
+  margin: 32px 0;
+}
+
+.tableContainerTitle {
+  color: #343434;
+  font-family: Lexend;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  height: 50px;
+  line-height: normal;
+  border-radius: 0px 0px 11.23px 11.23px;
+  background: rgba(156, 156, 156, 0.93);
+  backdrop-filter: blur(4.211065292358398px);
+  padding-left: 16px;
+}
+
+.section5Tbody tr td {
+  color: #323232;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.364px;
+  background-color: #cbcac8;
+  width: 100%;
+  height: 20px;
+  padding-left: 16px;
+}
+
+
+.section5Table {
+  width: 100%;
+  padding: 0;
+  border-collapse: separate;
+  border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
 }
