@@ -1,150 +1,294 @@
-header{
-    background-color: rgba(0, 0, 0,0.52); /* Color de fondo oscuro con opacidad */
-    color: white; /* Cambia el color del texto a blanco o el color deseado */
-    padding: 10px; /* Agrega espacio interno al encabezado */
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-left: 32px;
+header {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.52
+  ); /* Color de fondo oscuro con opacidad */
+  color: white; /* Cambia el color del texto a blanco o el color deseado */
+  padding: 10px; /* Agrega espacio interno al encabezado */
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  z-index: 1;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 32px;
+}
 
-  /********SECTION 1 ***********/
+/********SECTION 1 ***********/
 
-  /* Estilos para la sección1 con imagen de fondo */
+/* Estilos para la sección1 con imagen de fondo */
 .sectionOneWithBackground {
-    background-image: url("src/img/section1_background.png"); /* Ruta a tu imagen de fondo */
+  background-image: url("src/img/section1_background.png"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+
+  color: #fff; /* Color del texto dentro de la sección */
+  padding: 50px; /* Espacio interior para el contenido de la sección */
+  padding-bottom: 8px;
+  min-height: 100vh;
+}
+
+/* Estilos para el h1 puntual */
+.customH1 {
+  margin-top: 124px;
+  color: #ffffff; /* Color personalizado */
+  font-size: 3.75rem;
+  font-family: "Lexend", sans-serif; /* Fuente personalizada */
+  font-weight: 600; /*Peso de semibold*/
+  text-align: left; /* Alineación a la izquierda */
+  padding-left: 3%;
+}
+
+.customH2 {
+  color: #ffffff; /* Color personalizado */
+  font-family: "Lexend", sans-serif; /* Fuente personalizada */
+  font-weight: medium;
+  text-align: left; /* Alineación a la izquierda */
+}
+
+.colorAma {
+  color: rgba(255, 184, 0, 1);
+}
+
+.clientInformationContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: end;
+}
+
+.infoContainer {
+  padding-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 3%;
+}
+
+.informationContainerText {
+  margin-top: 32px;
+  display: flex;
+  justify-content: start;
+  column-gap: 64px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.clientInformationContainer p,
+.salesManInfoContainer p {
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.salesManInfoContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: end;
+}
+
+.salesManInfoContainer p:first-child {
+  font-size: 1rem;
+}
+
+/********SECTION 2***********/
+
+.sectionTwoWithBackground {
+  background-image: url("src/img/section2_background.png");
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+  background-position: center; /* Centra la imagen en la sección */
+  color: #fff; /* Color del texto dentro de la sección */
+  padding: 50px; /* Espacio interior para el contenido de la sección */
+  padding-bottom: 8px;
+  min-height: 100vh;
+}
+
+.titleSection2 {
+  color: #fff;
+  font-family: Lexend;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pSection2 {
+  color: #fff;
+  font-family: Lexend;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.informationTop {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.informationBottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTwoTableTitle {
+  text-align: center;
+  color: #fff;
+  font-family: Lexend;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: rgba(217, 217, 217, 0.17);
+  backdrop-filter: blur(4.211065292358398px);
+}
+
+.projectDetailsTable {
+  width: 100%;
+  padding: 16px;
+}
+
+.projectDetailsTHead{
+  height: 70px;
+  width: inherit;
+  font-weight: 600;
+  background: #494949;
+}
+
+.projectDetailsTr td:nth-child(1),.projectDetailsTr th:nth-child(1){
+  text-align: left;
+
+}
+
+.projectDetailsTr td:nth-child(2),.projectDetailsTr th:nth-child(2){
+  text-align: right;
+
+}
+
+.projectDetailsTr td:nth-child(3),.projectDetailsTr th:nth-child(3){
+  text-align: right;
+
+}
+
+table,th,td{
+  padding: 8px;
+}
+
+.bgTrTd{
+  background: #5A5A5A;
+}
+
+/******Section3****/
+
+.sectionThreeWithBackground {
+    background-image: url("src/img/section3_background.png");
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
     background-position: center; /* Centra la imagen en la sección */
-    color: #fff; /* Color del texto dentro de la sección */
+    color: #323232; /* Color del texto dentro de la sección */
     padding: 50px; /* Espacio interior para el contenido de la sección */
     padding-bottom: 8px;
     min-height: 100vh;
   }
   
-  /* Estilos para el h1 puntual */
-  .customH1 {
-    margin-top: 124px;
-    color: #FFFFFF; /* Color personalizado */
-    font-size: 3.75rem;
-    font-family: "Lexend", sans-serif; /* Fuente personalizada */
-    font-weight: 600; /*Peso de semibold*/
-    text-align: left; /* Alineación a la izquierda */
-    padding-left: 3%;
-  }
-  
-  .customH2 {
-    color: #FFFFFF; /* Color personalizado */
-    font-family: "Lexend", sans-serif; /* Fuente personalizada */
-    font-weight: medium;
-    text-align: left; /* Alineación a la izquierda */
-  }
-  
-  .colorAma {
-    color: rgba(255, 184, 0, 1);
-  }
-  
-  .clientInformationContainer {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: end;
-    
-  }
-  
-  .infoContainer {
-    padding-top: 80px;
-      width: 35%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 3%;
-  }
-  
-  .informationContainerText{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
-  }
-  
-  .clientInformationContainer p,.salesManInfoContainer p {
-    margin: 0;
-    text-align: left;
-    color: #fff;
+.tableSow{
+    background: #bebebc; 
+    padding:0; 
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
+}
+
+.informationSection3{
+    width: 50%;
+    max-height: 100vh;
+    padding: 50px 60px;
+}
+
+.soldSowHead{
+    border-radius: 0rem 0rem 0.70188rem 0.70188rem;
+    background: #b3b2b0; /* rgba(156, 156, 156, 0.93); */
+    backdrop-filter: blur(4.211065292358398px);
+    /*width: 53.6875rem;*/
+    height: 3.125rem;
+}
+
+.bgH3{
+    border-radius: 0rem 0rem 0.70188rem 0.70188rem;
+    background: #a1a1a1;/* rgba(156, 156, 156, 0.93);*/
+    backdrop-filter: blur(4.211065292358398px);
+    padding: 5px 0;
+}
+
+.section3TitleTable{
+    color: #343434;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0; 
+}
+
+.soldSowTr{
+    width: 53.68744rem;
+    height: 2.00119rem;
+    flex-shrink: 0;
+}
+
+.textSow{
+    color: #323232;
     font-family: DM Sans;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-  }
-  
-  .salesManInfoContainer {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: end;
-  }
-  
-  
-  .salesManInfoContainer p:first-child {
-    font-size: 1rem;
-  }
-  
-  
-  
-  /********SECTION 2***********/
+    letter-spacing: 0.08525rem;
+    padding: 0 10px;
+}
 
-  .sectionTwoWithBackground {
-    background-image: url("src/img/section2_background.png");    
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
-    background-position: center; /* Centra la imagen en la sección */
-    color: #fff; /* Color del texto dentro de la sección */
-    padding: 50px; /* Espacio interior para el contenido de la sección */
-    padding-bottom: 8px;
-    min-height: 100vh;
-  }
+.bgTr1{
+    background: #ababa8;
+}
 
-  .titleSection2{
-    color: #FFF;
-    font-family: Lexend;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .pSection2{
-    color: #FFF;
-    font-family: Lexend;
+.bgTr{
+    color: #464646;
+    font-family: DM Sans;
     font-size: 1.3rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
-  }
-
-  .informationTop{
-     padding: 50px 40px;
-
-  }
-
-  /***********Section3***************/
-
-  .sectionThreeWithBackground {
-    background-image: url("src/img/section3_background.png");    
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
-    background-position: center; /* Centra la imagen en la sección */
-    color: #343434; /* Color del texto dentro de la sección */
-    padding: 50px; /* Espacio interior para el contenido de la sección */
-    padding-bottom: 8px;
-    min-height: 100vh;
-  }
+    letter-spacing: 0.08525rem;
+}
