@@ -302,3 +302,109 @@ header {
   line-height: normal;
   letter-spacing: 1.98px;
 }
+
+.projectDetailsTr td:nth-child(1),.projectDetailsTr th:nth-child(1){
+  text-align: left;
+
+}
+
+.projectDetailsTr td:nth-child(2),.projectDetailsTr th:nth-child(2){
+  text-align: right;
+
+}
+
+.projectDetailsTr td:nth-child(3),.projectDetailsTr th:nth-child(3){
+  text-align: right;
+
+}
+
+table,th,td{
+  padding: 8px;
+}
+
+.bgTrTd{
+  background: #5A5A5A;
+}
+
+/******Section3****/
+
+.sectionFourWithBackground {
+    background-image: url("src/img/section3_background.png");
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    color: #323232; /* Color del texto dentro de la sección */
+    padding: 50px; /* Espacio interior para el contenido de la sección */
+    padding-bottom: 8px;
+    min-height: 100vh;
+  }
+  
+.tableSow{
+    background: #bebebc; 
+    padding:0; 
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
+}
+
+.informationSection3{
+    width: 50%;
+    max-height: 100vh;
+    padding: 50px 60px;
+}
+
+.soldSowHead{
+    border-radius: 0rem 0rem 0.70188rem 0.70188rem;
+    background: #b3b2b0; /* rgba(156, 156, 156, 0.93); */
+    backdrop-filter: blur(4.211065292358398px);
+    /*width: 53.6875rem;*/
+    height: 3.125rem;
+}
+
+.bgH3{
+    border-radius: 0rem 0rem 0.70188rem 0.70188rem;
+    background: #a1a1a1;/* rgba(156, 156, 156, 0.93);*/
+    backdrop-filter: blur(4.211065292358398px);
+    padding: 5px 0;
+}
+
+.section3TitleTable{
+    color: #343434;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0; 
+}
+
+.soldSowTr{
+    width: 53.68744rem;
+    height: 2.00119rem;
+    flex-shrink: 0;
+}
+
+.textSow{
+    color: #323232;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.08525rem;
+    padding: 0 10px;
+}
+
+.bgTr1{
+    background: #ababa8;
+}
+
+.bgTr{
+    color: #464646;
+    font-family: DM Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.08525rem;
+}
