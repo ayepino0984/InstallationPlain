@@ -708,3 +708,22 @@ header {
   border-collapse: separate;
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
 }
+
+
+.positionRelative{
+  position: relative;
+}
+
+
+.sectionsixWithBackground {
+  background-image: url("src/img/section5_background.png"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #fff; /* Color del texto dentro de la sección */
+  padding: 50px; /* Espacio interior para el contenido de la sección */
+  padding-bottom: 8px;
+  min-height: 100vh;
+}
