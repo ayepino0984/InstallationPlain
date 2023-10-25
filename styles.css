@@ -5,13 +5,8 @@
 }
 
 header {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.38
-  );
-  backdrop-filter: blur(3.5px); 
+  background-color: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(3.5px);
   color: white; /* Cambia el color del texto a blanco o el color deseado */
   padding: 10px; /* Agrega espacio interno al encabezado */
   position: fixed;
@@ -29,10 +24,10 @@ header {
   padding-left: 32px;
 }
 
-.menu-content{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Estilos para el h1 puntual */
@@ -40,12 +35,11 @@ header {
   font-size: 3.75rem;
   font-family: "Lexend", sans-serif; /* Fuente personalizada */
   font-weight: 600; /*Peso de semibold*/
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-style: normal;
   line-height: normal;
 }
-
 
 /********SECTION 1 ***********/
 
@@ -242,7 +236,7 @@ header {
   line-height: normal;
   letter-spacing: 1.364px;
   height: 20px;
-  background: rgba(48,48,48,0.8);
+  background: rgba(48, 48, 48, 0.8);
 }
 
 .projectDetailsTable {
@@ -297,10 +291,10 @@ header {
   display: flex;
 }
 
-.section3Title{
+.section3Title {
   color: #000;
   font-family: Lexend;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -308,14 +302,14 @@ header {
   padding: 10px 20px 5px 20px; /*top right bottom left*/
 }
 
-.dateStyle{
+.dateStyle {
   color: #000;
   font-family: Lexend;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 0px 20px 20px 20px; 
+  padding: 0px 20px 20px 20px;
   margin: 0;
 }
 
@@ -326,7 +320,7 @@ header {
   height: 3.125rem;
 }
 
-.textTable2{
+.textTable2 {
   color: #000;
   font-family: DM Sans;
   font-size: 1.1rem;
@@ -335,10 +329,10 @@ header {
   line-height: normal;
   letter-spacing: 0.05425rem;
   background-color: #d7d6d5;
-  margin:0;
+  margin: 0;
 }
 
-.textTable1{
+.textTable1 {
   color: #000;
   font-family: DM Sans;
   font-size: 1.1rem;
@@ -347,11 +341,11 @@ header {
   line-height: normal;
   letter-spacing: 0.05425rem;
   background-color: #cececb;
-  margin:0;
+  margin: 0;
 }
 
 .cont3 {
-  background:  rgba(212, 211, 211, 0.33);
+  background: rgba(212, 211, 211, 0.33);
   backdrop-filter: blur(2px);
   border-radius: 0rem 0rem 0.70rem 0.7rem;
   opacity: 0.9; 
@@ -375,17 +369,17 @@ header {
  padding: 3%;
 }
 
-.Flex{
+.Flex {
   display: flex;
 }
 
-.colFlex{
+.colFlex {
   display: flex;
- /*justify-content: center;*/
+  /*justify-content: center;*/
   align-items: center;
 }
 
-.col3{
+.col3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,15 +387,15 @@ header {
   /* opacity: 0.7; */
   background: rgba(202, 200, 200, 0.29);
   backdrop-filter: blur(5px);
-  padding: 10px; 
+  padding: 10px;
 }
 
-.contentSection{
+.contentSection {
   width: 100%;
-  padding: 0 16px 0 16px ;
+  padding: 0 16px 0 16px;
 }
 
-.contentSectionTab{
+.contentSectionTab {
   width: 100%;
   padding: 0;
   background: #d9d8d6 ;
@@ -412,25 +406,25 @@ header {
   padding: 0;
 }
 
-.c1{
-   width: 50%;
+.c1 {
+  width: 50%;
 }
 
-.c2{
-   width: 50%;
-   text-align: right;
+.c2 {
+  width: 50%;
+  text-align: right;
 }
 
-.c1tab{
+.c1tab {
   width: 70%;
 }
 
-.c2tab{
+.c2tab {
   width: 30%;
   text-align: right;
 }
 
-.textInfo3{
+.textInfo3 {
   color: #000;
   text-align: center;
   font-family: Lexend;
@@ -438,10 +432,10 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 20px 0 0 0; 
+  margin: 20px 0 0 0;
 }
 
-.tittles{
+.tittles {
   color: #000;
   text-align: center;
   font-family: Lexend;
@@ -452,7 +446,7 @@ header {
   margin:0; 
 }
 
-.textItemName3{
+.textItemName3 {
   color: #000;
   font-family: DM Sans;
   font-size: 1rem;
@@ -460,21 +454,21 @@ header {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.08525rem;
-  margin:0; 
+  margin: 0;
 }
 
-.textItem3L{
+.textItem3L {
   color: #000;
   font-family: Lexend;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin:0;
+  margin: 0;
   padding: 0px 20px;
 }
 
-.textItem{
+.textItem {
   color: #000;
   font-family: DM Sans;
   font-size: 1.1rem;
@@ -482,11 +476,11 @@ header {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.08525rem;
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
-.textItem3R{
+.textItem3R {
   color: #000;
   font-family: DM Sans;
   font-size: 1rem;
@@ -495,39 +489,66 @@ header {
   line-height: normal;
   letter-spacing: 0.08525rem;
   text-align: right;
-  margin:0;
+  margin: 0;
 }
 
-.colLeft{
+.colLeft {
   width: 12%;
 }
 
-.colRight{
+.colRight {
   width: 88%;
 }
 
-.bGris{
+.bGris {
   margin-top: 2%;
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(174, 174, 174, 0.57);
   backdrop-filter: blur(6px);
-  padding: 12px; 
+  padding: 12px;
 }
 
-.bGrisP{
+.bGrisP {
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(174, 174, 174, 0.57);
   backdrop-filter: blur(6px);
-  padding: 10px;/*top right bottom left*/
+  padding: 10px; /*top right bottom left*/
 }
 
-.bGrisI{
+.bGrisI {
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(189, 189, 189, 0.38);
   backdrop-filter: blur(5px);
+  padding: 10px;
+}
+
+.bGrisCol2{
+  margin-top: 2%;
+  width: 100%;
+  border-radius: 0.6rem;
+  background: rgba(68, 68, 68, 0.39);
+  backdrop-filter: blur(6px);
+  padding: 12px; 
+}
+
+.bGrisPCol2{
+  width: 100%;
+  border-radius: 0.6rem;
+  background: rgba(170, 170, 170, 0.3);
+  backdrop-filter: blur(6px);
+  opacity: 0.2px;
+  padding: 10px;/*top right bottom left*/
+}
+
+.bGrisICol2{
+  width: 100%;
+  border-radius: 0.6rem;
+  background: rgba(169, 169, 169, 0.3);
+  backdrop-filter: blur(5px);
+  opacity: 0.2px;
   padding: 10px; 
 }
 
@@ -569,22 +590,22 @@ header {
   background-color: rgba(149, 149, 149, 1);
 }
 
-.alignLeft{
+.alignLeft {
   text-align: left;
 }
- .marginTop{
+.marginTop {
   margin-top: 1%;
- }
- .padBottom{
+}
+.padBottom {
   padding-bottom: 6%;
- }
+}
 
-.info3Content{
+.info3Content {
   height: 100%;
   width: 100%;
 }
 
-.img3Content{
+.img3Content {
   height: 90%;
   width: 90%;
   justify-content: center;
@@ -629,7 +650,6 @@ header {
   font-size: 0.8rem;
 }
 
-
 .soldSowTr th {
   color: #464646;
   font-family: DM Sans;
@@ -643,12 +663,11 @@ header {
   height: 20px;
 }
 
-.soldSowTr td{
+.soldSowTr td {
   padding-left: 16px;
   padding-right: 16px;
   height: 20px;
   font-size: 1rem;
-
 }
 
 .soldSowTr th:nth-child(2),
@@ -975,10 +994,169 @@ header {
   padding-left: 16px;
 }
 
-
 .section5Table {
   width: 100%;
   padding: 0;
   border-collapse: separate;
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
+}
+
+.positionRelative {
+  position: relative;
+}
+
+.sectionSixWithBackground {
+  background-image: url("src/img/section5_background.png"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+  color: #fff; /* Color del texto dentro de la sección */
+  padding: 50px; /* Espacio interior para el contenido de la sección */
+  padding-bottom: 8px;
+  min-height: 100vh;
+}
+
+.secSixTitle {
+  color: #393941;
+  font-family: Lexend;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.secSixSubTitle {
+  color: #101528;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  text-align: left;
+  margin: 0 16px;
+  margin-bottom: 16px;
+}
+
+.sectionSixImagesContainer {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  margin: 0 16px;
+}
+
+.secSixImageOne {
+  width: 60%;
+  height: auto;
+}
+
+.secSixImageTwo {
+  width: 10%;
+  height: auto;
+}
+
+.secSixInformationContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 96px;
+  margin-left: 16px;
+  row-gap: 32px;
+}
+
+.secSixInfoContainer {
+  display: flex;
+  column-gap: 96px;
+}
+
+.secSixInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 250px;
+}
+
+.secSixInfo h4 {
+  color: #454545;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.secSixInfo p {
+  color: #101528;
+  font-family: DM Sans;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.secSixtableTitle {
+  color: #fff;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #686868;
+  height: 60px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secSixTable {
+  width: 100%;
+  background: #686868;
+  padding: 0;
+  border-collapse: separate;
+  border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
+}
+
+.secSixTable thead {
+  background-color: #585857;
+  height: 60px;
+  padding: 0 16px;
+}
+
+.secSixTable thead th {
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+
+.secSixTable tbody tr td {
+  text-align: center;
+}
+
+.secSixTable tbody tr {
+  background-color: #5d5d5c;
+}
+
+.secSixFinalTextContainer{
+  display: flex;
+  justify-content: start;
+}
+
+.secSixFinalText {
+  color: #3e3e3e;
+  margin-top: 16px;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 1.1px;
 }
