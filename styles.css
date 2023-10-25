@@ -1005,6 +1005,8 @@ header {
   position: relative;
 }
 
+/*************SECTION 5******************/
+
 .sectionSixWithBackground {
   background-image: url("src/img/section5_background.png"); /* Ruta a tu imagen de fondo */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
@@ -1030,7 +1032,7 @@ header {
   color: #101528;
   text-align: center;
   font-family: DM Sans;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1042,19 +1044,19 @@ header {
 
 .sectionSixImagesContainer {
   display: flex;
-  height: 300px;
+  height: 500px;
   justify-content: space-between;
   margin: 0 16px;
 }
 
 .secSixImageOne {
-  width: 60%;
+  width: 70%;
   height: auto;
 }
 
 .secSixImageTwo {
-  width: 10%;
-  height: auto;
+  width: 20%;
+  /* height: auto; */
 }
 
 .secSixInformationContainer {
@@ -1062,6 +1064,7 @@ header {
   flex-direction: column;
   margin-top: 96px;
   margin-left: 16px;
+  margin-bottom: 50px;
   row-gap: 32px;
 }
 
@@ -1105,7 +1108,7 @@ header {
   font-weight: 400;
   line-height: normal;
   background: #686868;
-  height: 60px;
+  height: 50px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -1116,14 +1119,16 @@ header {
   width: 100%;
   background: #686868;
   padding: 0;
+  margin-top: -16px;
   border-collapse: separate;
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
 }
 
 .secSixTable thead {
   background-color: #585857;
-  height: 60px;
+  height: 55px;
   padding: 0 16px;
+
 }
 
 .secSixTable thead th {
@@ -1140,6 +1145,7 @@ header {
   text-align: center;
 }
 
+
 .secSixTable tbody tr {
   background-color: #5d5d5c;
 }
@@ -1150,7 +1156,7 @@ header {
 }
 
 .secSixFinalText {
-  color: #3e3e3e;
+  color: #000;
   margin-top: 16px;
   font-family: DM Sans;
   font-size: 0.875rem;
@@ -1159,4 +1165,105 @@ header {
   line-height: normal;
   text-align: center;
   letter-spacing: 1.1px;
+}
+
+/***SECTION 6 IMAGENES***/
+
+.section6WithBackground {
+  background-image: url("src/img/section6_background.png"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
+  color: #fff; /* Color del texto dentro de la sección */
+  padding: 50px; /* Espacio interior para el contenido de la sección */
+  padding-bottom: 8px;
+  min-height: 100vh;
+}
+
+
+.section6ImagesContainer {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin: 0 16px;
+  margin-bottom: 50px;
+}
+
+.sec6ImageOne {
+  width: 100%;
+  height: auto;
+}
+
+.sec6ImageTwo {
+  width: 90%;
+  height: auto; 
+}
+
+.sectionSix2ImagesContainer {
+  display: flex;
+  height: auto; 
+  justify-content: space-evenly;
+  margin: 0 16px;
+  margin-bottom: 50px;
+}
+
+
+.sectionSix2Images2Container {
+  display: flex;
+  height: auto; 
+  justify-content: space-between;
+  margin: 0 16px;
+  margin-bottom: 50px;
+}
+
+.secSix2Image1 {
+  width: 40%;
+  height: auto;
+}
+
+.secSix2Image2 {
+  width: 40%;
+   height: auto; 
+}
+
+.secSix2Image1H {
+  width: 40%;
+  height: 300px;
+}
+.secSix2Image2H {
+  width: 30%;
+   height: auto; 
+}
+
+.textImg{
+  color: #000;
+  font-family: Lexend;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.secSixInformationImgContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 96px;
+  margin-left: 16px;
+  margin-bottom: 50px;
+  row-gap: 32px;
+}
+
+.secSixInfoImgContainer {
+  display: flex;
+  column-gap: 96px;
+}
+
+.secSixInfoImg {
+  display: flex;
+  flex-direction: column;
+  color: #101528;
+  font-family: DM Sans;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
