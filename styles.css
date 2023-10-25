@@ -60,16 +60,31 @@ header {
   min-height: 100vh;
 }
 
-
 .customH2 {
   color: #ffffff; /* Color personalizado */
-  font-family: "Lexend", sans-serif; /* Fuente personalizada */
-  font-weight: medium;
+  font-family: Lexend; /* Fuente personalizada */
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
   text-align: left; /* Alineación a la izquierda */
+  line-height: normal;
 }
 
 .colorAma {
   color: rgba(255, 184, 0, 1);
+}
+
+.infoContainer {
+  padding-top: 80px;
+  width: 100%;
+  min-height: 84vh;
+  /*en pantallas más grandes 750px*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  align-items: flex-start; /* Alinea el contenido en la parte izquierda */
+  justify-content: flex-end; /* Alinea el contenido en la parte inferior */
 }
 
 .clientInformationContainer {
@@ -78,16 +93,6 @@ header {
   flex-direction: column;
   gap: 12px;
   justify-content: end;
-}
-
-
-.infoContainer {
-  padding-top: 80px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-left: 3%;
 }
 
 .informationContainerText {
@@ -105,7 +110,7 @@ header {
   text-align: left;
   color: #fff;
   font-family: DM Sans;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -166,6 +171,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
+  border-radius: 0.1875rem;
+  background: rgba(33, 33, 33, 0.29);
+  backdrop-filter: blur(7px);
 }
 
 .sectionTwoTableTitle {
@@ -182,21 +191,27 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0;
-  background: rgba(217, 217, 217, 0.25);
-  backdrop-filter: blur(4.211065292358398px);
-}
-
-.projectDetailsTable {
-  width: 100%;
-  padding: 10px 0;
-  background: rgba(217, 217, 217, 0.25);
-  backdrop-filter: blur(4.211065292358398px);
+  background: rgba(84, 84, 84, 0.15);
+  backdrop-filter: blur(4px);
+  border-radius: 0rem 0rem 0.70188rem 0.70188rem;
 }
 
 .projectDetailsTHead {
-  height: 30px;
+  height: 25px;
   width: inherit;
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
+  font-family: DM Sans, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08525rem;
+}
+
+.projectDetailsTable {
+  width: 96%;
+  padding: 10px 0 2px 0px;
+  background: rgba(73, 73, 73, 0.25);
+  backdrop-filter: blur(4.211065292358398px);
+  border-radius: 0 0.1875rem;
 }
 
 .projectDetailsTr td:nth-child(1),
@@ -208,6 +223,7 @@ header {
 .projectDetailsTr td:nth-child(2),
 .projectDetailsTr th:nth-child(2) {
   text-align: right;
+  padding-right: 150px;
 }
 
 .projectDetailsTr td:nth-child(3),
@@ -216,7 +232,7 @@ header {
   padding-right: 16px;
 }
 
-.projectDetailsTr th,
+/* .projectDetailsTr th, */
 .projectDetailsTr td {
   font-size: 1rem;
   color: #fff;
@@ -226,14 +242,13 @@ header {
   line-height: normal;
   letter-spacing: 1.364px;
   height: 20px;
+  background: rgba(48,48,48,0.8);
 }
 
 .projectDetailsTable {
   border-collapse: separate;
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
 }
-
-
 
 /******Section3****/
 
@@ -255,12 +270,49 @@ header {
   border-spacing: 0 14px;
 }
 
-.informationSection3 {
+.infoSection3ColSold {
+  width: 50%;
   flex: 0 0 calc(50% - 10px); /* Evitar que se encogen, pero permitir que ocupen el 50% menos 10px de margen */
   padding: 50px 60px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin:0;
-  /*flex-wrap: wrap;*/
+  background-image: url("src/img/section3_background.png");
+  background-size: cover;
+}
+
+.infoSection3ColProj {
+  width: 50%;
+  flex: 0 0 calc(50% - 10px); /* Evitar que se encogen, pero permitir que ocupen el 50% menos 10px de margen */
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin:0;
+  
+}
+
+.section3Title{
+  color: #000;
+  font-family: Lexend;
+  font-size: 1.5rem; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 10px 20px 5px 20px; /*top right bottom left*/
+}
+
+.dateStyle{
+  color: #000;
+  font-family: Lexend;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px 20px 20px 20px; 
+  margin: 0;
 }
 
 .soldSowHead {
@@ -270,41 +322,109 @@ header {
   height: 3.125rem;
 }
 
+.textTable2{
+  color: #000;
+  font-family: DM Sans;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.05425rem;
+  background-color: #d7d6d5;
+  margin:0;
+}
+
+.textTable1{
+  color: #000;
+  font-family: DM Sans;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.05425rem;
+  background-color: #cececb;
+  margin:0;
+}
+
+
 .cont3 {
-  background: #cccccc; /* rgba(156, 156, 156, 0.93);*/
-  backdrop-filter: blur(4.211065292358398px);
+  background:  rgba(212, 211, 211, 0.33);
+  backdrop-filter: blur(2px);
+  border-radius: 0rem 0rem 0.70rem 0.7rem;
+  opacity: 0.8; 
   padding: 8px 0;
-  width: 80%;
+  width: 100%;
+}
+.cont3Padd{
+ padding: 4%;
+}
+
+.Flex{
+  display: flex;
+}
+
+.colFlex{
+  display: flex;
+ /*justify-content: center;*/
+  align-items: center;
 }
 
 .col3{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0.625rem;
+  /* opacity: 0.7; */
+  background: rgba(202, 200, 200, 0.29);
+  backdrop-filter: blur(5px);
+  padding: 10px; 
+}
+
+.contentSection{
+  width: 100%;
+  padding: 0 16px 0 16px ;
+}
+
+.contentSectionTab{
+  width: 100%;
+  padding: 0 16px 0 16px ;
+  background: #d9d8d6 ;
 }
 
 .c1{
-   padding: 0px 20px;
    width: 50%;
 }
 
 .c2{
    width: 50%;
-   padding: 0px 50px; 
+   text-align: right;
 }
 
-.section3Title{
-  color: #000;
-  font-family: Lexend;
-  font-size: 1.8rem; 
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
-  padding: 40px 40px; 
+.row{
+  width: 100%;
+}
+
+.c1tab{
+  width: 70%;
+}
+
+.c2tab{
+  width: 30%;
+  text-align: right;
 }
 
 .textInfo3{
+  color: #000;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px 0 0 0; 
+}
+
+.tittles{
   color: #000;
   text-align: center;
   font-family: Lexend;
@@ -322,6 +442,7 @@ header {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.08525rem;
+  margin:0; 
 }
 
 .textItem3L{
@@ -332,8 +453,20 @@ header {
   font-weight: 600;
   line-height: normal;
   margin:0;
+  padding: 0px 20px;
 }
 
+.textItem{
+  color: #000;
+  font-family: DM Sans;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.08525rem;
+  margin: 0; 
+  padding: 0;
+}
 
 .textItem3R{
   color: #000;
@@ -343,30 +476,67 @@ header {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.08525rem;
-  text-align: center;
+  text-align: right;
   margin:0;
 }
 
+.colLeft{
+  width: 12%;
+}
+
+.colRight{
+  width: 88%;
+}
 
 .bGris{
-  margin-left: 2%;
-  width: 76%;
+  margin-top: 2%;
+  width: 100%;
   border-radius: 0.6rem;
-  background: rgba(175, 174, 174, 0.87);
-  backdrop-filter: blur(7.5px);
-  padding: 10px;
+  background: rgba(174, 174, 174, 0.57);
+  backdrop-filter: blur(6px);
+  padding: 12px; 
 }
+
+.bGrisP{
+  width: 100%;
+  border-radius: 0.6rem;
+  background: rgba(174, 174, 174, 0.57);
+  backdrop-filter: blur(6px);
+  padding: 10px;/*top right bottom left*/
+}
+
+.bGrisI{
+  width: 100%;
+  border-radius: 0.6rem;
+  background: rgba(189, 189, 189, 0.38);
+  backdrop-filter: blur(5px);
+  padding: 10px; 
+}
+
+.colorModel{
+    background: rgba(163, 163, 163, 0.38);
+}
+
+.alignLeft{
+  text-align: left;
+}
+ .marginTop{
+  margin-top: 1%;
+ }
+ .padBottom{
+  padding-bottom: 6%;
+ }
 
 .info3Content{
   height: 100%;
-  width: 60%;
+  width: 100%;
 }
 
 .img3Content{
-  height: 100%;
-  width: 40%;
+  height: 90%;
+  width: 90%;
   justify-content: center;
-  align-items: center;
+  align-self: center;
 }
 
 .imgContainer {
@@ -471,7 +641,7 @@ header {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
-  background-color: #2f2f30;
+  background-color: #d9d8d6;
 }
 
 .addersTable .addersThead th {
