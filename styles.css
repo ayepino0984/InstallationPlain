@@ -1044,7 +1044,7 @@ header {
 
 .sectionSixImagesContainer {
   display: flex;
-  height: 400px;
+  height: 00px;
   justify-content: space-between;
   margin: 0 16px;
 }
@@ -1240,16 +1240,16 @@ header {
 }
 
 .secSix2Image1Home{
-  width: 40%;
+  width: 36%;
   height: auto;
   max-width: 100%;
-  max-height: 330px;
+  max-height: 400px;
 }
 
 .secSix2Image2Home{
-  width: 30%;
+  width: 23%;
   height: auto; 
-  max-height: 450px ;
+  max-height: 500px ;
 }
 
 .secSix2Image2Rafter{
