@@ -1261,9 +1261,41 @@ header {
   letter-spacing: 0.08525rem;
 }
 
-
 .secSixTable tbody tr {
   background-color: #5c5c5c;
+}
+
+/* Establece un ancho fijo para cada columna */
+.secSixTable th:nth-child(1),
+.secSixTable td:nth-child(1) {
+  width: 12%; /* Establece el ancho fijo según el contenido más largo en la primera columna */
+}
+
+.secSixTable th:nth-child(2),
+.secSixTable td:nth-child(2) {
+  width: 14%; /* Establece el ancho fijo según el contenido más largo en la segunda columna */
+}
+
+/* Establece un ancho fijo para cada columna */
+.secSixTable th:nth-child(3),
+.secSixTable td:nth-child(3) {
+  width: 14%; /* Establece el ancho fijo según el contenido más largo en la primera columna */
+}
+
+.secSixTable th:nth-child(4),
+.secSixTable td:nth-child(4) {
+  width: 14%; /* Establece el ancho fijo según el contenido más largo en la segunda columna */
+}
+
+/* Establece un ancho fijo para cada columna */
+.secSixTable th:nth-child(5),
+.secSixTable td:nth-child(5) {
+  width: 15%; /* Establece el ancho fijo según el contenido más largo en la primera columna */
+}
+
+.secSixTable th:nth-child(6),
+.secSixTable td:nth-child(6) {
+  width: 15%; /* Establece el ancho fijo según el contenido más largo en la segunda columna */
 }
 
 .secSixFinalTextContainer {
