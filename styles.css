@@ -370,7 +370,7 @@ header {
   padding: 50px 60px;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin:0;
   background-image: url("src/img/section3_backgroundSold.png");
   background-size: cover;
 }
@@ -386,7 +386,7 @@ header {
   background-size: cover;
 }
 
-.section3Sow {
+.section3Sow{
   width: 100%;
   display: flex;
 }
@@ -447,26 +447,26 @@ header {
 .cont3 {
   background: rgba(212, 211, 211, 0.33);
   backdrop-filter: blur(2px);
-  border-radius: 0rem 0rem 0.7rem 0.7rem;
-  opacity: 0.9;
+  border-radius: 0rem 0rem 0.70rem 0.7rem;
+  opacity: 0.9; 
   padding: 8px 0;
   width: 100%;
 }
 
-.bordeAma {
-  border-left: 10px solid #ffb800;
+.bordeAma{
+  border-left: 10px solid #FFB800;
 }
 
-.rectCont3 {
+.rectCont3{
   width: 0.9375rem;
   height: 100%;
   border-radius: 0rem 0rem 0.70188rem 0.70188rem;
-  background: #ffb800;
+  background: #FFB800;
   backdrop-filter: blur(4px);
 }
 
-.cont3Padd {
-  padding: 3%;
+.cont3Padd{
+ padding: 3%;
 }
 
 .Flex {
@@ -498,7 +498,12 @@ header {
 .contentSectionTab {
   width: 100%;
   padding: 0;
-  background: #d9d8d6;
+  background: #d9d8d6 ;
+}
+
+.contentSectionTabCol2{
+  width: 100%;
+  padding: 0;
 }
 
 .contentSectionTabCol2 {
@@ -543,7 +548,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0;
+  margin:0; 
 }
 
 .textItemName3 {
@@ -625,68 +630,68 @@ header {
   padding: 10px;
 }
 
-.bGrisCol2 {
+.bGrisCol2{
   margin-top: 2%;
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(68, 68, 68, 0.39);
   backdrop-filter: blur(6px);
-  padding: 12px;
+  padding: 12px; 
 }
 
-.bGrisPCol2 {
+.bGrisPCol2{
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(170, 170, 170, 0.3);
   backdrop-filter: blur(6px);
   opacity: 0.2px;
-  padding: 10px; /*top right bottom left*/
+  padding: 10px;/*top right bottom left*/
 }
 
-.bGrisICol2 {
+.bGrisICol2{
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(169, 169, 169, 0.3);
   backdrop-filter: blur(5px);
   opacity: 0.2px;
-  padding: 10px;
+  padding: 10px; 
 }
 
-.bGrisCol2 {
+.bGrisCol2{
   margin-top: 2%;
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(68, 68, 68, 0.39);
   backdrop-filter: blur(6px);
-  padding: 12px;
+  padding: 12px; 
 }
 
-.bGrisPCol2 {
+.bGrisPCol2{
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(170, 170, 170, 0.3);
   backdrop-filter: blur(6px);
   opacity: 0.2px;
-  padding: 10px; /*top right bottom left*/
+  padding: 10px;/*top right bottom left*/
 }
 
-.bGrisICol2 {
+.bGrisICol2{
   width: 100%;
   border-radius: 0.6rem;
   background: rgba(169, 169, 169, 0.3);
   backdrop-filter: blur(5px);
   opacity: 0.2px;
-  padding: 10px;
+  padding: 10px; 
 }
 
-.colorModel {
-  background: rgba(197, 197, 195, 0.48);
+.colorModel{
+    background: rgba(197, 197, 195, 0.48);
 }
-.colorModelCol2 {
+.colorModelCol2{
   background: rgba(146, 146, 146, 0.28);
 }
 
-.colorGross {
+.colorGross{
   background-color: rgba(149, 149, 149, 1);
 }
 
@@ -712,8 +717,8 @@ header {
   align-self: center;
 }
 
-.bordeAmarillo {
-  border: 10px solid #ffb800;
+.bordeAmarillo{
+  border: 10px solid #FFB800;
 }
 
 .imgContainer {
@@ -1053,10 +1058,13 @@ header {
   margin: 32px 0;
 }
 
-.aligColor {
+
+
+
+.aligColor{
   width: 100%;
   text-align: left;
-  color: #000;
+  color:#000;
   padding: 30px 20px 30px 20px;
 }
 
@@ -1141,7 +1149,7 @@ header {
 
 .sectionSixImagesContainer {
   display: flex;
-  height: 500px;
+  height: 400px;
   justify-content: space-between;
   margin: 0 16px;
 }
@@ -1149,11 +1157,14 @@ header {
 .secSixImageOne {
   width: 70%;
   height: auto;
+  max-width: 100%;
+  max-height: 400px;
 }
 
 .secSixImageTwo {
   width: 20%;
-  /* height: auto; */
+  height: auto; 
+  max-height: 400px;
 }
 
 .secSixInformationContainer {
@@ -1225,6 +1236,7 @@ header {
   background-color: #585857;
   height: 55px;
   padding: 0 16px;
+
 }
 
 .secSixTable thead th {
@@ -1240,6 +1252,7 @@ header {
 .secSixTable tbody tr td {
   text-align: center;
 }
+
 
 .secSixTable tbody tr {
   background-color: #5d5d5c;
@@ -1288,12 +1301,12 @@ header {
 
 .sec6ImageTwo {
   width: 90%;
-  height: auto;
+  height: auto; 
 }
 
 .sectionSix2ImagesContainer {
   display: flex;
-  height: auto;
+  height: auto; 
   justify-content: space-evenly;
   margin: 0 16px;
   margin-bottom: 50px;
@@ -1301,7 +1314,7 @@ header {
 
 .sectionSix2Images2Container {
   display: flex;
-  height: auto;
+  height: auto; 
   justify-content: space-between;
   margin: 0 16px;
   margin-bottom: 50px;
@@ -1314,19 +1327,43 @@ header {
 
 .secSix2Image2 {
   width: 40%;
-  height: auto;
+   height: auto; 
 }
 
 .secSix2Image1H {
   width: 40%;
-  height: 300px;
+  height: auto;
+  max-width: 100%;
+  max-height: 300px;
 }
 .secSix2Image2H {
   width: 30%;
-  height: auto;
+  height: auto; 
+  max-width: 100%;
+  max-height: 500px;
 }
 
-.textImg {
+.secSix2Image1Home{
+  width: 40%;
+  height: auto;
+  max-width: 100%;
+  max-height: 330px;
+}
+
+.secSix2Image2Home{
+  width: 30%;
+  height: auto; 
+  max-height: 450px ;
+}
+
+.secSix2Image2Rafter{
+  width: 20%;
+  height: auto;
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.textImg{
   color: #000;
   font-family: Lexend;
   font-size: 1.4rem;
