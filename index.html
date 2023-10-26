@@ -27,29 +27,26 @@
 
     <title>Instalation Plain</title>
   </head>
-  <body>
-    <header>
-      <div class="menu">
-        <a
-          href="https://www.demand.solar/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="src/img/logo_blanco.png"
-            alt="logo"
-            className="left-image"
-          />
-        </a>
-        <div class="menu-content">
-          <h1 class="customH1">
-            Your Installation <span class="colorAma">PLAN</span>
-          </h1>
-        </div>
+  <header>
+    <div class="menu">
+      <a
+        href="https://www.demand.solar/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="src/img/logo_blanco.png" alt="logo" className="left-image" />
+      </a>
+      <div class="menu-content">
+        <h1 class="customH1">
+          Your Installation <span class="colorAma">PLAN</span>
+        </h1>
       </div>
-    </header>
+    </div>
+  </header>
+  <body>
     <div class="m-0 positionRelative">
-      <div id="modal" class="alert">
+      <div class="buttonConfirm"><img src="./src/img/buttonIcon.svg" alt="Convertir a PDF"></div>
+      <div id="modal" class="alert ">
         <h3 class="alertTitle">Aprroval</h3>
         <div class="alertTextContainer">
           <p>
@@ -84,10 +81,12 @@
             <p>{apiData.project.salesmanName}</p>
             <p>{apiData.project.salesmanEmail}</p>
             <p>{apiData.project.salesmanMobile}</p>
+            <p>{apiData.project.Number Agent}</p>
           </div>
         </div>
       </div>
     </section>
+
     <!--Section2 -->
     <section id="section2" class="sectionTwoWithBackground">
       <div class="container-fluid">
@@ -134,7 +133,8 @@
         </div>
       </div>
     </section>
-    <section id="section3">
+    <!--Section3 -->
+    <section id="section3" class="section3Sow">
       <div class="infoSection3ColSold">
         <h3 class="section3Title">Sold Scope of Work</h3>
         <p class="dateStyle">05/08/2023</p>
@@ -298,8 +298,8 @@
             <div class="Flex contentSectionTab">
               <table class="addersTable">
                 <!-- <thead class="addersThead">
-                  <th>Adders</th>
-                </thead> -->
+                              <th>Adders</th>
+                            </thead> -->
                 <tbody class="addersTbody">
                   <tr class="addersTr">
                     <td>
@@ -358,111 +358,317 @@
                 </tbody>
               </table>
             </div>
+            <div class="Flex cont3 colorGross cont3Padd">
+              <div class="c1">
+                <p class="textInfo3" style="text-align: left; margin-top: 0">
+                  Gross Price
+                </p>
+              </div>
+              <div class="c2">
+                <p
+                  class="textItemName3"
+                  style="text-align: right; margin-top: 0"
+                >
+                  $0.00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="infoSection3ColProj">
+        <h3 class="section3Title" style="color: #fff">Project Scope of Work</h3>
+        <p class="dateStyle" style="color: #fff">23/10/2023</p>
+        <div class="img3Content bordeAmarillo">
+          <div class="imgContainer">
+            <div class="mapOverlay">
+              <p>{apiData.project.clientAddress}</p>
+            </div>
+            <!-- /*{apiData.satelitalImage}*/ -->
+            <img
+              src="src/img/img_maps.png"
+              alt="img_house_maps"
+              class="satelitalImage"
+            />
+          </div>
+        </div>
+        <div class="info3Content">
+          <p
+            class="textInfo3 cont3 bordeAma"
+            style="color: #fff; background-color: rgba(170, 170, 170, 0.4)"
+          >
+            Sold Sow
+          </p>
+          <div class="col3 bordeAma" style="background: rgba(80, 80, 80, 0.4)">
+            <div class="c1">
+              <p class="textItemName3" style="color: #fff">ITEAM</p>
+            </div>
+            <div class="c2">
+              <p class="textItemName3" style="color: #fff">DESCRIPTION</p>
+            </div>
+          </div>
+          <div class="contentSection">
+            <div
+              class="col3 bGris bordeAma"
+              style="background-color: rgba(68, 68, 68, 0.39)"
+            >
+              <div class="c1">
+                <p class="textItem3L" style="color: #fff">Solar Panel</p>
+              </div>
+              <div class="c2">
+                <p class="textItem3R" style="color: #fff">$value</p>
+              </div>
+            </div>
+            <div class="Flex marginTop">
+              <div class="colLeft">
+                <div class="bGrisPCol2">
+                  <p class="textItem" style="color: #fff">x15u</p>
+                </div>
+              </div>
+              <div class="colRight">
+                <div class="bGrisICol2 alignLeft">
+                  <p class="textItem" style="color: #fff">Panel Hanwha Q</p>
+                </div>
+                <div class="bGrisICol2 colorModelCol2 alignLeft">
+                  <p class="textItem padBottom" style="color: #fff">
+                    CELLS Q.PEAK DUO PLK
+                  </p>
+                  <p class="textItem" style="color: #fff">ML-G10+ 400</p>
+                </div>
+                <div class="col3 bGrisICol2 marginTop">
+                  <div class="c1">
+                    <p class="textItem" style="color: #fff">System Size</p>
+                  </div>
+                  <div class="c2">
+                    <p class="textItem" style="color: #fff">9,280</p>
+                  </div>
+                </div>
+                <div class="col3 bGrisICol2 marginTop">
+                  <div class="c1">
+                    <p class="textItem" style="color: #fff">PG % Offset</p>
+                  </div>
+                  <div class="c2">
+                    <p class="textItem" style="color: #fff">%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contentSection">
+            <div
+              class="col3 bGris bordeAma"
+              style="background-color: rgba(68, 68, 68, 0.39)"
+            >
+              <div class="c1">
+                <p class="textItem3L" style="color: #fff">Inverters</p>
+              </div>
+              <div class="c2">
+                <p class="textItem3R" style="color: #fff">$value</p>
+              </div>
+            </div>
+            <div class="Flex marginTop">
+              <div class="colLeft">
+                <div class="bGrisPCol2">
+                  <p class="textItem" style="color: #fff">x1u</p>
+                </div>
+              </div>
+              <div class="colRight">
+                <div class="bGrisICol2 alignLeft">
+                  <p class="textItem" style="color: #fff">
+                    Inverters 1 x SolarEdge
+                  </p>
+                </div>
+                <div class="bGrisICol2 colorModelCol2 alignLeft">
+                  <p class="textItem" style="color: #fff">
+                    SE6000H-US EnergyHub
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contentSection">
+            <div
+              class="col3 bGris bordeAma"
+              style="background-color: rgba(68, 68, 68, 0.39)"
+            >
+              <div class="c1">
+                <p class="textItem3L" style="color: #fff">Batteries</p>
+              </div>
+              <div class="c2">
+                <p class="textItem3R" style="color: #fff">$value</p>
+              </div>
+            </div>
+            <div class="Flex marginTop">
+              <div class="colLeft">
+                <div class="bGrisPCol2">
+                  <p class="textItem" style="color: #fff">x1u</p>
+                </div>
+              </div>
+              <div class="colRight">
+                <div class="bGrisICol2 alignLeft">
+                  <p class="textItem" style="color: #fff">
+                    Enphase IQ Battery 5P
+                  </p>
+                </div>
+                <div class="col3 bGrisICol2 colorModelCol2">
+                  <div class="c1 alignLeft">
+                    <p class="textItem padBottom" style="color: #fff">
+                      Annual Production
+                    </p>
+                    <p class="textItem" style="color: #fff">Degradation</p>
+                  </div>
+                  <div class="c2">
+                    <p class="textItem padBottom" style="color: #fff">6kW</p>
+                    <p class="textItem" style="color: #fff">0.5%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contentSection">
+            <div
+              class="col3 bGris bordeAma"
+              style="background-color: rgba(68, 68, 68, 0.39)"
+            >
+              <div class="c1">
+                <p class="textItem" style="color: #fff">
+                  Production Guarantee:
+                </p>
+              </div>
+              <div class="c2">
+                <p class="textItem" style="color: #fff">0</p>
+              </div>
+            </div>
+            <div
+              class="col3 bGris bordeAma"
+              style="background-color: rgba(68, 68, 68, 0.39)"
+            >
+              <div class="c1">
+                <p class="textItem" style="color: #fff">Net PPW:</p>
+              </div>
+              <div class="c2">
+                <p class="textItem" style="color: #fff">3.2317</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parte Adders -->
+        <div class="marginTop">
+          <div class="Flex cont3 cont3Padd" style="background: #ffb800">
+            <div class="c1">
+              <p
+                class="textInfo3"
+                style="text-align: left; margin-top: 0; color: #fff"
+              >
+                Gross Price
+              </p>
+            </div>
+            <div class="c2">
+              <p
+                class="textItemName3"
+                style="text-align: right; margin-top: 0; color: #fff"
+              >
+                $0.00
+              </p>
+            </div>
+          </div>
+          <div>
+            <p
+              class="tittles cont3 marginTop bordeAma"
+              style="background: rgba(195, 195, 195, 0.39); color: #fff"
+            >
+              Adders
+            </p>
+            <div class="Flex contentSectionTabCol2">
+              <table class="addersTableCol2 colorModelCol2">
+                <!-- <thead class="addersThead">
+                              <th>Adders</th>
+                            </thead> -->
+                <tbody class="addersTbody">
+                  <tr class="addersTrCol2">
+                    <td>
+                      Solar Stimulus Check CA - $1000 (Added in New Deal stage)
+                    </td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td class="textTable">
+                      Solar Stimulus Monthly Payments - $6 (Added in New Deal
+                      stage)
+                    </td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td>
+                      Module Upgrade - $694.4 (Added in Project Review stage)
+                    </td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td>
+                      Multiple Arrays - $900 (Added in Project Review stage)
+                    </td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td>
+                      Inverter in Garage - $240 (Added in Project Review stage)
+                    </td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td>Solar Stimulus Check CA Notes:</td>
+                    <td></td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td>Solar Stimulus Monthly Payments Notes: 6 for 6</td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td>
+                      Module Upgrade Notes: Sunrun Modules Approved QCell 320s
+                    </td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="addersTrCol2">
+                    <td>Multiple Arrays Notes: Three (3) Additional Arrays</td>
+                    <td>$0.00</td>
+                  </tr>
+
+                  <tr class="addersTrCol2">
+                    <td>Inverter in Garage Notes</td>
+                    <td>$0.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="Flex cont3 cont3Padd" style="background: #ffb800">
+              <div class="c1">
+                <p
+                  class="textInfo3"
+                  style="text-align: left; margin-top: 0; color: #fff"
+                >
+                  Gross Price
+                </p>
+              </div>
+              <div class="c2">
+                <p
+                  class="textItemName3"
+                  style="text-align: right; margin-top: 0; color: #fff"
+                >
+                  $0.00
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="section4" class="sectionFourWithBackground">
-      <table class="addersTable">
-        <thead class="addersThead">
-          <th>Adders</th>
-        </thead>
-        <tbody class="addersTbody">
-          <tr class="addersTr">
-            <td>Solar Stimulus Check CA - $1000</td>
-            <td>(Added in New Deal stage)</td>
-          </tr>
-          <tr class="addersTr">
-            <td>
-              Solar Stimulus Monthly Payments - $6 (Added in New Deal stage)
-            </td>
-          </tr>
-          <tr class="addersTr">
-            <td>Module Upgrade - $694.4 (Added in Project Review stage)</td>
-          </tr>
-          <tr class="addersTr">
-            <td>Multiple Arrays - $900 (Added in Project Review stage)</td>
-          </tr>
-          <tr class="addersTr">
-            <td>Inverter in Garage - $240 (Added in Project Review stage)</td>
-          </tr>
-          <tr class="addersTr">
-            <td>
-              Solar Stimulus Check CA Notes: Solar Stimulus Monthly Payments
-              Notes: 6 for 6
-            </td>
-          </tr>
-          <tr class="addersTr">
-            <td>Module Upgrade Notes: Sunrun Modules Approved QCell 320s</td>
-          </tr>
-          <tr class="addersTr">
-            <td>Multiple Arrays Notes: Three (3) Additional Arrays</td>
-          </tr>
-          <tr class="addersTr">
-            <td>Inverter in Garage Notes</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="totalContainer">
-        <p class="total">Total</p>
-        <p class="totalValue">$0.00</p>
-      </div>
-      <div class="auxiliaryProducts">
-        <h3 class="auxiliaryProductsTitle">Auxiliary Products</h3>
-        <div class="d-flex">
-          <div class="auxiliaryProductsInformation">
-            <div class="roof">
-              <p>Roof Replacement Service</p>
-              <p>$0.00</p>
-            </div>
-            <div class="auxiliaryList">
-              <div class="auxiliaryItem">
-                <p>Desired Material</p>
-                <p>Ceramic Tiles</p>
-              </div>
-              <div class="auxiliaryItem">
-                <p>Labor Hours</p>
-                <p>14hs</p>
-              </div>
-              <div class="auxiliaryItem">
-                <p>Materials</p>
-                <p>$8,611.50</p>
-              </div>
-              <div class="auxiliaryItem">
-                <p>Installation service</p>
-                <p>$2,000.00</p>
-              </div>
-            </div>
-            <div class="exterior">
-              <p>Exterior Painting Service</p>
-              <p>$0.00</p>
-            </div>
-            <div class="auxiliaryList">
-              <div class="auxiliaryItem">
-                <p>Desired New Color</p>
-                <p>Blue</p>
-              </div>
-              <div class="auxiliaryItem">
-                <p>Additional Details</p>
-                <p>No Repairs</p>
-              </div>
-              <div class="auxiliaryItem">
-                <p>Estimated Budget</p>
-                <p>$800.00</p>
-              </div>
-            </div>
-          </div>
-          <div class="imageContainer">
-            <img src="./src//img/house.png" alt="house" />
-          </div>
-        </div>
-        <div class="totalContainer totalAuxiliary">
-          <p class="total">Total</p>
-          <p class="totalValue">$0.00</p>
-        </div>
-      </div>
-    </section>
+    <!--Section4 -->
     <section id="section5" class="sectionFiveWithBackground">
+      <h3 class="titleSection2 aligColor">
+        Comprehensive Installation Documentation
+      </h3>
       <div class="tableContainer">
         <h3 class="tableContainerTitle">Design Notes</h3>
         <table class="section5Table">
@@ -568,12 +774,13 @@
         </table>
       </div>
     </section>
+    <!--Section5-->
     <section class="sectionSixWithBackground">
       <h3 class="secSixTitle">Shade Report</h3>
-      <p class="secSixSubTitle">Arrual Irradiance</p>
+      <p class="secSixSubTitle">Annual Irradiance</p>
       <div class="sectionSixImagesContainer">
         <img class="secSixImageOne" src="./src/img/map.png" alt="mapa" />
-        <img class="secSixImageTwo" src="./src/img/kmh.png" alt="Kmh" />
+        <img class="secSixImageTwo" src="./src/img/kmh.png" alt="kWh" />
       </div>
       <div class="secSixInformationContainer">
         <div class="secSixInfoContainer">
@@ -593,10 +800,7 @@
         <div class="secSixInfoContainer">
           <div class="secSixInfo">
             <h4>Addres</h4>
-            <p>
-              6948 Cambridge <br />Avenue Rancho Cucamonga,<br />
-              CA 91701
-            </p>
+            <p>6948 Cambridge <br />Avenue Rancho Cucamonga, CA 91701</p>
           </div>
           <div class="secSixInfo">
             <h4>Coordinates</h4>
@@ -664,6 +868,72 @@
         <p class="secSixFinalText">Weighted average by<br />panel count</p>
       </div>
     </section>
+
+    <!--Section6-->
+    <section class="sectionSixWithBackground">
+      <div class="section6ImagesContainer">
+        <img
+          class="sec6ImageOne"
+          src="./src/img/img_conect_panel.png"
+          alt="conex"
+        />
+      </div>
+      <div class="section6ImagesContainer">
+        <img
+          class="sec6ImageTwo"
+          src="./src/img/img_techo_conect.png"
+          alt="techo"
+        />
+      </div>
+      <div class="sectionSix2ImagesContainer">
+        <img class="secSix2Image1" src="./src/img/img_bos.png" alt="bos" />
+        <img class="secSix2Image2" src="./src/img/img_poi.png" alt="poi" />
+      </div>
+
+      <div class="secSixInformationImgContainer">
+        <div class="secSixInfoImg">
+          <p>1234 Elm Street, Los Angeles, CA 91335</p>
+        </div>
+        <div class="colFlex">
+          <div class="c1">
+            <p class="textImg">Photo: Front of Home (include address number)</p>
+          </div>
+          <div class="c2">
+            <p class="textImg">Shade Report</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionSix2Images2Container">
+        <img
+          class="secSixImage1H"
+          src="./src/img/img_fronthome.png"
+          alt="front"
+        />
+        <img class="secSix2Image2H" src="./src/img/img_lathome.png" alt="lat" />
+      </div>
+
+      <div class="secSixInformationImgContainer">
+        <div class="colFlex">
+          <div class="c1">
+            <p class="textImg">Rafter Size</p>
+          </div>
+          <div class="c2">
+            <p class="textImg">Rafter Span (inches on center)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionSix2Images2Container">
+        <img class="secSixImage2H" src="./src/img/img_rafter.png" alt="raft" />
+        <img
+          class="secSix2Image1H"
+          src="./src/img/img_rafterspan.png"
+          alt="rspan"
+        />
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

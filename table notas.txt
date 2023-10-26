@@ -86,3 +86,109 @@
             </tr>
           </table>
         </div>
+
+
+ACA (tabla vieja section4)
+<section id="section4" class="sectionFourWithBackground">
+        <table class="addersTable">
+          <thead class="addersThead">
+            <th>Adders</th>
+          </thead>
+          <tbody class="addersTbody">
+            <tr class="addersTr">
+              <td>Solar Stimulus Check CA - $1000 </td>
+              <td>(Added in New Deal stage)</td>
+            </tr>
+            <tr class="addersTr">
+              <td>
+                Solar Stimulus Monthly Payments - $6 (Added in New Deal stage)
+              </td>
+            </tr>
+            <tr class="addersTr">
+              <td>Module Upgrade - $694.4 (Added in Project Review stage)</td>
+            </tr>
+            <tr class="addersTr">
+              <td>Multiple Arrays - $900 (Added in Project Review stage)</td>
+            </tr>
+            <tr class="addersTr">
+              <td>Inverter in Garage - $240 (Added in Project Review stage)</td>
+            </tr>
+            <tr class="addersTr">
+              <td>
+                Solar Stimulus Check CA Notes: Solar Stimulus Monthly Payments
+                Notes: 6 for 6
+              </td>
+            </tr>
+            <tr class="addersTr">
+              <td>Module Upgrade Notes: Sunrun Modules Approved QCell 320s</td>
+            </tr>
+            <tr class="addersTr">
+              <td>Multiple Arrays Notes: Three (3) Additional Arrays</td>
+            </tr>
+            <tr class="addersTr">
+              <td>Inverter in Garage Notes</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="totalContainer">
+          <p class="total">Total</p>
+          <p class="totalValue">$0.00</p>
+        </div>
+        <div class="auxiliaryProducts">
+          <h3 class="auxiliaryProductsTitle">Auxiliary Products</h3>
+          <div class="d-flex ">
+            <div class="auxiliaryProductsInformation">
+              <div class="roof">
+                <p>Roof Replacement Service</p>
+                <p>$0.00</p>
+              </div>
+              <div class="auxiliaryList">
+                <div class="auxiliaryItem">
+                  <p>Desired Material</p>
+                  <p>Ceramic Tiles</p>
+                </div>
+                <div class="auxiliaryItem">
+                  <p>Labor Hours</p>
+                  <p>14hs</p>
+                </div>
+                <div class="auxiliaryItem">
+                  <p>Materials</p>
+                  <p>$8,611.50</p>
+                </div>
+                <div class="auxiliaryItem">
+                  <p>Installation service</p>
+                  <p>$2,000.00</p>
+                </div>
+              </div>
+              <div class="exterior">
+                <p>Exterior Painting Service</p>
+                <p>$0.00</p>
+              </div>
+              <div class="auxiliaryList">
+                <div class="auxiliaryItem">
+                  <p>Desired New Color</p>
+                  <p>Blue</p>
+                </div>
+                <div class="auxiliaryItem">
+                  <p>Additional Details</p>
+                  <p>No Repairs</p>
+                </div>
+                <div class="auxiliaryItem">
+                  <p>Estimated Budget</p>
+                  <p>$800.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="imageContainer">
+              <img src="./src//img/house.png" alt="house" />
+            </div>
+          </div>
+          <div class="totalContainer totalAuxiliary">
+            <p class="total">Total</p>
+            <p class="totalValue">$0.00</p>
+          </div>
+        </div>
+      </section>
+
+
+
