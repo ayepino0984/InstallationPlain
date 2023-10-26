@@ -15,6 +15,106 @@ header {
   z-index: 1;
 }
 
+.buttonConfirm {
+  position: fixed;
+  z-index: 100;
+  padding: 16px;
+  bottom: 4%;
+  right: 4%;
+  border-radius: 10px;
+  background: #ffb800;
+  backdrop-filter: blur(7.5px);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.buttonConfirm:hover{
+  transform: scale(1.1,1.1);
+}
+
+.alert {
+  position: fixed;
+  padding: 0;
+  border-radius: 0px 0px 29px 29px;
+  background: rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(7.5px);
+  top: 50%;
+  width: 70%;
+  height: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.alertTitle {
+  background: rgba(255, 184, 0, 0.68);
+  backdrop-filter: blur(4.211065292358398px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Lexend;
+  font-size: 1.2rem;
+  height: 40px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.alertTextContainer {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(7.5px);
+  margin: 64px 32px;
+}
+
+.alertTextContainer p {
+  color: #454545;
+  font-family: DM Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 16px;
+}
+
+.alertButtonsContainer {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: transparent;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 32px;
+  margin: 0 px;
+}
+
+.accept,
+.reject {
+  color: #fff;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 10px;
+  backdrop-filter: blur(7.5px);
+  border: none;
+  padding: 12px 86px;
+}
+
+.accept {
+  background: rgba(87, 198, 0, 0.68);
+}
+
+.reject {
+  background: rgba(53, 53, 53, 0.68);
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -281,7 +381,7 @@ header {
   padding: 50px 60px;
   display: flex;
   flex-direction: column;
-  margin:0;
+  margin: 0;
   background-image: url("src/img/section3_backgroundProj.png");
   background-size: cover;
 }
@@ -402,6 +502,11 @@ header {
 }
 
 .contentSectionTabCol2{
+  width: 100%;
+  padding: 0;
+}
+
+.contentSectionTabCol2 {
   width: 100%;
   padding: 0;
 }
@@ -601,12 +706,13 @@ header {
 }
 
 .info3Content {
-  height: 100%;
+
+  height: auto; /*100%;*/
   width: 100%;
 }
 
 .img3Content {
-  height: 90%;
+  height: auto;
   width: 90%;
   justify-content: center;
   align-self: center;
@@ -1044,7 +1150,7 @@ header {
 
 .sectionSixImagesContainer {
   display: flex;
-  height: 00px;
+  height: 500px;
   justify-content: space-between;
   margin: 0 16px;
 }
@@ -1053,13 +1159,13 @@ header {
   width: 70%;
   height: auto;
   max-width: 100%;
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .secSixImageTwo {
   width: 20%;
   height: auto; 
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .secSixInformationContainer {
@@ -1128,10 +1234,10 @@ header {
 }
 
 .secSixTable thead {
-  background-color: #585857;
+  background-color: #616160;
   height: 55px;
   padding: 0 16px;
-
+  margin-top: -16px;
 }
 
 .secSixTable thead th {
@@ -1141,19 +1247,26 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.1px;
+  letter-spacing: 1px;
 }
 
 .secSixTable tbody tr td {
   text-align: center;
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08525rem;
 }
 
 
 .secSixTable tbody tr {
-  background-color: #5d5d5c;
+  background-color: #5c5c5c;
 }
 
-.secSixFinalTextContainer{
+.secSixFinalTextContainer {
   display: flex;
   justify-content: start;
 }
@@ -1164,10 +1277,10 @@ header {
   font-family: DM Sans;
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   text-align: center;
-  letter-spacing: 1.1px;
+  letter-spacing: 1px;
 }
 
 /***SECTION 6 IMAGENES***/
@@ -1180,7 +1293,6 @@ header {
   padding-bottom: 8px;
   min-height: 100vh;
 }
-
 
 .section6ImagesContainer {
   display: flex;
