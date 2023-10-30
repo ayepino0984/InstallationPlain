@@ -364,6 +364,13 @@ header {
   border-spacing: 0 14px;
 }
 
+.section3Sow{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;  /*ESTO*/
+}
+
+
 .infoSection3ColSold {
   width: 50%;
   flex: 0 0 calc(50%); /* Evitar que se encogen, pero permitir que ocupen el 50% menos 10px de margen */
@@ -391,11 +398,11 @@ header {
   opacity: 0.83;
   background: #FFB800;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
-  height: 3rem ;
-  width: 8rem;
+  height: 10% ;
+  width: 15%;
   align-self: flex-end;
   padding-top: 8px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .tcont3{
@@ -409,10 +416,6 @@ header {
   line-height: normal;
 }
 
-.section3Sow{
-  width: 100%;
-  display: flex;
-}
 
 .section3Title {
   color: #000;
@@ -1459,4 +1462,38 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 768px) {
+
+  .cont3Top{
+    height: 10%;
+    width: 50%;
+  }
+  .tcont3{
+    font-size: 1rem;
+  }
+
+  .sectionSixImagesContainer{
+    height: 260px;
+  }
+
+  .secSixInfo h4{
+      font-size: 1.2rem;
+  }
+
+  .secSixInfo p{
+    font-size: 1rem;
+  }
+
+  .secSixInfoImg,.textImg {
+    font-size: 1rem;
+  }
+
+  .infoSection3ColSold, .infoSection3ColProj{
+    width: 100%; /* Ocupa todo el ancho disponible */
+    flex: 0 0 100%;  
+    padding: 20px; /* Ajusta el relleno para resoluciones más pequeñas */
+  }
+ 
 }
