@@ -1466,13 +1466,13 @@ header {
 
 @media (max-width: 768px) {
 
-  .cont3Top{
+/*   .cont3Top{
     height: 10%;
     width: 50%;
   }
   .tcont3{
     font-size: 1rem;
-  }
+  } */
 
   .sectionSixImagesContainer{
     height: 260px;
