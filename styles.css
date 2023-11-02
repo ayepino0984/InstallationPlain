@@ -5,14 +5,23 @@
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.38);
-  backdrop-filter: blur(3.5px);
+  /* background-color: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px); */
+  position: relative;
   color: white; /* Cambia el color del texto a blanco o el color deseado */
-  padding: 10px; /* Agrega espacio interno al encabezado */
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
-  min-height: 10vh;
+  min-height: 8vh;
   z-index: 1;
+}
+
+.fondo{
+  position: absolute;
+  backdrop-filter: blur(9px);
+  background-color: rgba(0, 0, 0, 0.88);
+  width: 100%;
+  min-height: 8vh;
+  z-index: 2;
 }
 
 .buttonConfirm {
@@ -122,6 +131,10 @@ header {
   flex-direction: column;
   width: 100%;
   padding-left: 32px;
+  position: relative;
+  background-image: url("src/img/section1_background.png");
+  background-size: cover;
+  padding: 10px; /* Agrega espacio interno al encabezado */
 }
 
 .menu-content {
@@ -132,7 +145,7 @@ header {
 
 /* Estilos para el h1 puntual */
 .customH1 {
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   font-family: "Lexend", sans-serif; /* Fuente personalizada */
   font-weight: 600; /*Peso de semibold*/
   color: #fff;
@@ -169,9 +182,9 @@ header {
 }
 
 .infoContainer {
-  padding-top: 80px;
+  padding-top: 50px;
   width: 100%;
-  min-height: 84vh;
+  min-height: 75vh;
   /*en pantallas más grandes 750px*/
   display: flex;
   flex-direction: column;
@@ -365,9 +378,15 @@ header {
 }
 
 .section3Sow{
+  background: #D9D9D9; 
   width: 100%;
   display: flex;
   flex-wrap: wrap;  /*ESTO*/
+}
+
+.ContAdders{
+  width: 100%;
+  margin: 20px;
 }
 
 
@@ -481,6 +500,18 @@ header {
 
 .bordeAma{
   border-left: 10px solid #FFB800;
+}
+
+.borderRed{
+  border-left: 20px solid #F00;
+}
+
+.borderGreen{
+  border-left: 20px solid #00FF0A;
+}
+
+.borderGris{
+  border-left: 20px solid #bdb9b9;
 }
 
 .rectCont3{
@@ -711,10 +742,10 @@ header {
 }
 
 .colorModel{
-    background: rgba(197, 197, 195, 0.48);
+    background: rgba(197, 197, 195, 0.38);
 }
 .colorModelCol2{
-  background: rgba(146, 146, 146, 0.28);
+  background: rgba(70, 70, 70, 0.47);
 }
 
 .colorGross{
@@ -885,6 +916,8 @@ header {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .addersTableCol2 th {
@@ -906,15 +939,21 @@ header {
 
 .addersTrCol2 td {
   padding-left: 16px;
-  background-color: rgba(155, 154, 154, 0.2);
-  color: #fff;
+  padding-right: 16px;
+  border-radius: 0.4rem;
+  background-color: rgba(175, 175, 175, 0.5);
+  color: #000;
   font-family: DM Sans;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 1.364px;
-  height: 20px;
+  letter-spacing: 0.05425px;
+  height: 20px; 
+}
+
+.textCenter{
+  text-align: center;
 }
 
 .addersTbody tr:nth-child(1) {
