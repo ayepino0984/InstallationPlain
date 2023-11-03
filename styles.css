@@ -184,7 +184,7 @@ header {
 .infoContainer {
   padding-top: 50px;
   width: 100%;
-  min-height: 75vh;
+  min-height: 85vh;
   /*en pantallas más grandes 750px*/
   display: flex;
   flex-direction: column;
@@ -389,6 +389,19 @@ header {
   margin: 20px;
 }
 
+.add{ 
+      width: 25%;
+      border-radius: 0.4rem;color: #000;
+      font-family: DM Sans;
+      font-size: 1.1rem;
+      padding-left: 10px;
+    }
+
+.contRef{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
 
 .infoSection3ColSold {
   width: 50%;
