@@ -5,23 +5,38 @@
 }
 
 header {
-  /* background-color: rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(5px); */
   position: relative;
-  color: white; /* Cambia el color del texto a blanco o el color deseado */
-  /*position: fixed;*/
+  color: white; 
   width: 100%;
   min-height: 8vh;
   z-index: 1;
 }
 
 .fondo{
-  position: absolute;
+  /* position: absolute; */
   backdrop-filter: blur(9px);
   background-color: rgba(0, 0, 0, 0.88);
   width: 100%;
   min-height: 8vh;
   z-index: 2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  /*align-items: flex-start;*/
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  background-image: url("src/img/img_portada.png");
+  background-size: cover;
+  padding: 10px; 
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttonConfirm {
@@ -124,28 +139,10 @@ header {
   background: rgba(53, 53, 53, 0.68);
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  /*align-items: flex-start;*/
-  flex-direction: column;
-  width: 100%;
-  padding-left: 32px;
-  position: relative;
-  background-image: url("src/img/section1_background.png");
-  background-size: cover;
-  padding: 10px; /* Agrega espacio interno al encabezado */
-}
-
-.menu-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 /* Estilos para el h1 puntual */
 .customH1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: "Lexend", sans-serif; /* Fuente personalizada */
   font-weight: 600; /*Peso de semibold*/
   color: #fff;
@@ -158,19 +155,18 @@ header {
 
 /* Estilos para la sección1 con imagen de fondo */
 .sectionOneWithBackground {
-  background-image: url("src/img/section1_background.png"); /* Ruta a tu imagen de fondo */
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
-
+  background-image: url("src/img/img_portada.png"); /* Ruta a tu imagen de fondo */
+  /* background-size: cover;  */
   color: #fff; /* Color del texto dentro de la sección */
   padding: 50px; /* Espacio interior para el contenido de la sección */
   padding-bottom: 8px;
-  min-height: 100vh;
+  min-height: auto;
 }
 
 .customH2 {
   color: #ffffff; /* Color personalizado */
   font-family: Lexend; /* Fuente personalizada */
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   font-style: normal;
   text-align: left; /* Alineación a la izquierda */
@@ -182,15 +178,12 @@ header {
 }
 
 .infoContainer {
-  padding-top: 50px;
-  width: 100%;
-  min-height: 85vh;
-  /*en pantallas más grandes 750px*/
+  width: 100%;/*en pantallas más grandes 750px*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-left: 3%;
-  align-items: flex-start; /* Alinea el contenido en la parte izquierda */
+  /* align-items: flex-start; Alinea el contenido en la parte izquierda */
   justify-content: flex-end; /* Alinea el contenido en la parte inferior */
 }
 
@@ -203,10 +196,23 @@ header {
 }
 
 .informationContainerText {
+  margin-right: 4%;
   margin-top: 32px;
   display: flex;
   justify-content: start;
-  column-gap: 64px;
+  column-gap: 24px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.informationContainerText2{
+  width: 50%;
+  margin-left: 4%;
+  margin-top: 32px;
+  margin-right: 4%;
+  display: flex;
+  justify-content: start;
+  column-gap: 24px;
   align-items: start;
   flex-wrap: wrap;
 }
@@ -217,22 +223,31 @@ header {
   text-align: left;
   color: #fff;
   font-family: DM Sans;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
+.salesManInfoContainer p {
+  text-align: right;
+}
+
+
 .salesManInfoContainer {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   justify-content: end;
 }
 
-.salesManInfoContainer p:first-child {
-  font-size: 1rem;
+.salesManInfoContainerP{
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 3%;
 }
 
 /********SECTION 2***********/
@@ -242,9 +257,33 @@ header {
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección */
   background-position: center; /* Centra la imagen en la sección */
   color: #fff; /* Color del texto dentro de la sección */
-  padding: 50px; /* Espacio interior para el contenido de la sección */
+  padding-top: 20px; /* Espacio interior para el contenido de la sección */
   padding-bottom: 8px;
   min-height: 100vh;
+}
+
+.infoCol1 {
+  width: 50%;
+  flex: 0 0 calc(50%); /* Evitar que se encogen, pero permitir que ocupen el 50% menos 10px de margen */
+  /* padding: 50px 60px; */
+  display: flex;
+  flex-direction: column;
+  margin:0;
+}
+
+.infoCol2{
+  width: 50%;
+  flex: 0 0 calc(50%); /* Evitar que se encogen, pero permitir que ocupen el 50% menos 10px de margen */
+  /* padding: 0px 60px 50px 60px; */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.section2{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;  /*ESTO*/
 }
 
 .titleSection2 {
@@ -259,18 +298,53 @@ header {
 .pSection2 {
   color: #fff;
   font-family: Lexend;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
+.contCol1{
+  border-radius: 0rem 3.125rem 3.125rem 0rem;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.34) 0%, rgba(14, 14, 14, 0.34) 100%);
+  backdrop-filter: blur(17.200000762939453px);
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.contCol2{
+  border-radius: 3.125rem 0rem 0rem 3.125rem;
+  background: linear-gradient(2deg, rgba(20, 20, 20, 0.34) 98.07%, rgba(0, 0, 0, 0.34) 151.09%, rgba(26, 26, 26, 0.34) 151.09%);
+  backdrop-filter: blur(17.200000762939453px);
+  padding: 20px;
+  margin-left: 10px;
+}
+
 .informationTop {
-  padding: 50px 40px;
+  padding: 30px 40px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: start;
 }
+
+.imgCont{
+  width: 100%;
+  height: auto; 
+  display: flex;
+  padding: 0 !important;
+}
+
+.textCont{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scopeImage {
+  width: 100%;
+  height: 100%;
+}
+
 
 .informationBottom {
   width: 100%;
@@ -280,33 +354,34 @@ header {
   align-items: center;
   padding-bottom: 20px;
   border-radius: 0.1875rem;
-  background: rgba(33, 33, 33, 0.29);
-  backdrop-filter: blur(7px);
+/*   background: rgba(33, 33, 33, 0.29);
+  backdrop-filter: blur(7px); */
 }
 
 .sectionTwoTableTitle {
-  text-align: center;
+  text-align: left;
   color: #fff;
-  font-family: Lexend;
+  font-family: DM Sans;
   font-size: 1.3rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
+  padding-left: 2%;
   height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   margin: 0;
   background: rgba(84, 84, 84, 0.15);
   backdrop-filter: blur(4px);
-  border-radius: 0rem 0rem 0.70188rem 0.70188rem;
+  border-radius: 0.70188rem 0.70188rem 0rem 0rem ;
 }
 
 .projectDetailsTHead {
   height: 25px;
   width: inherit;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-family: DM Sans, sans-serif;
   font-size: 1.1rem;
@@ -314,8 +389,7 @@ header {
 }
 
 .projectDetailsTable {
-  width: 96%;
-  padding: 10px 0 2px 0px;
+  width: 100%;
   background: rgba(73, 73, 73, 0.25);
   backdrop-filter: blur(4.211065292358398px);
   border-radius: 0 0.1875rem;
@@ -356,6 +430,9 @@ header {
   border-collapse: separate;
   border-spacing: 0 16px; /* Ajusta el valor de 10px según el espacio deseado entre las filas */
 }
+
+
+
 
 /******Section3****/
 
@@ -520,7 +597,11 @@ header {
 }
 
 .borderGreen{
-  border-left: 20px solid #00FF0A;
+  border-left: 20px solid rgba(94, 126, 79, 1);
+}
+
+.borderViolet{
+  border-left: 20px solid #7A6082;
 }
 
 .borderGris{
@@ -582,11 +663,11 @@ header {
 }
 
 .c1 {
-  width: 50%;
+  width: 80%;
 }
 
 .c2 {
-  width: 50%;
+  width: 0%;
   text-align: right;
 }
 
@@ -624,7 +705,7 @@ header {
 .textItemName3 {
   color: #000;
   font-family: DM Sans;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -635,7 +716,7 @@ header {
 .textItem3L {
   color: #000;
   font-family: Lexend;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -671,8 +752,20 @@ header {
   width: 12%;
 }
 
+.colLeftInfo{
+  width: 52%;
+}
+
+.colRightImg{
+  width: 8%;
+}
+
+.colLeftInfoIteam{
+  width: 64%;
+}
+
 .colRight {
-  width: 88%;
+  width: 14%;
 }
 
 .bGris {
@@ -767,6 +860,9 @@ header {
 
 .alignLeft {
   text-align: left;
+}
+.alignRight {
+  text-align: right;
 }
 .marginTop {
   margin-top: 1%;
