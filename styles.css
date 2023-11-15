@@ -604,6 +604,10 @@ header {
   border-left: 20px solid #7A6082;
 }
 
+.borderBlue{
+border-left: 20px solid #5D788C;
+} 
+
 .borderGris{
   border-left: 20px solid #bdb9b9;
 }
