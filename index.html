@@ -40,20 +40,22 @@
         <h1 class="customH1">
           Your Installation <span class="colorAma">PLAN</span>
         </h1>
-        <div class="infoContainer">
+        <div class="Flex">
           <div class="informationContainerText">
             <h2 class="customH2">NAME CLIENT</h2>
                 <div class="clientInformationContainer">
                   <p>Dirección completa</p>
                 </div>
                 <div class="clientInformationContainer">
-                  <p>{apiData.project.clientName}</p>
-                  <p>{apiData.project.clientEmail}</p>
+                  <p>{clientName}</p>
+                  <p>{clientEmail}</p>
                 </div>
                 <div class="clientInformationContainer">
-                  <p>{apiData.project.clientMobile}</p>
+                  <p>{clientMobile}</p>
                   <p>Job ID: F053676</p>
                 </div>
+           </div>
+           <div class="informationContainerText2">
                 <div class="salesManInfoContainerP">
                   <p>Your representative:</p>
                 </div>
@@ -62,8 +64,8 @@
                   <p>{apiData.project.salesmanEmail}</p>
                 </div>
                 <div class="salesManInfoContainer">
-                  <p>{apiData.project.salesmanMobile}</p>
-                  <p>{apiData.project.Number Agent}</p>
+                  <p>{salesmanMobile}</p>
+                  <p>{Number Agent}</p>
                 </div>
            </div>
            
@@ -72,6 +74,7 @@
     </div>
   </header>
   <body>
+    
     <div class="m-0 positionRelative">
       <div class="buttonConfirm"><img src="./src/img/buttonIcon.svg" alt="Convertir a PDF"></div>
       <div id="modal" class="alert d-none">
@@ -92,49 +95,88 @@
       </div>
     </div>
     <!--Contenedor General -->
+    <!--Section1 -->
+    <section id="section1" class="sectionTwoWithBackground">
+        <div class="section2">
 
-    <!--Section2 -->
-    <section id="section2" class="sectionTwoWithBackground">
-      <div class="container-fluid p-0 section2">
-
-        <div class="infoCol1">
-          <div class="contCol1">
-            <div class="informationTop">
-              <div>
-                <img src="src/img/img_base_items.png" alt="img_base" class="img" />
+          <div class="infoCol1">
+            <div class="contCol1">
+              <div class="informationTop">
+                <div>
+                  <img src="src/img/img_base_items.png" alt="img_base" class="img" />
+                </div>
+                <div class="textCont">
+                  <h3 class="titleSection2"> Base Items</h3>
+                </div>
               </div>
-              <div class="textCont">
-                <h3 class="titleSection2"> Base Items</h3>
-              </div>
-            </div>
-            <div class="informationBottom">
-              <div class="info3Content">
-                <div class="contentSection Flex">
-                  <div class="colLeftInfoIteam">
-                    <div class="bGrisICol2 borderGreen">
-                      <p class="textItemName3" style="color: #fff">ITEAM</p>
+              <div class="informationBottom">
+                <div class="info3Content">
+                  <div class="contentSection Flex">
+                    <div class="colLeftInfoIteam">
+                      <div class="bGrisICol2 borderGreen">
+                        <p class="textItemName3" style="color: #fff">ITEAM</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItemName3" style="color: #fff">PRICE</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItemName3" style="color: #fff">AMOUNT</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItemName3" style="color: #fff">PPW</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItemName3" style="color: #fff">PRICE</p>
+                  <div class="contentSection">
+                    <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
+                      <div class="c1">
+                        <p class="textItem3L" style="color: #fff">Services</p>
+                      </div>
+                      <div class="c2">
+                        <p class="textItem3R" style="color: #fff"></p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItemName3" style="color: #fff">AMOUNT</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItemName3" style="color: #fff">PPW</p>
+                    <div class="Flex marginTop">
+                      <div class="colLeft">
+                        <div class="bGrisPCol2">
+                          <p class="textItem" style="color: #fff">17,200</p>
+                        </div>
+                      </div>
+                      <div class="colLeftInfo">
+                        <div class="bGrisICol2 alignLeft">
+                          <p class="textItem" style="color: #fff">Solar</p>
+                        </div>
+                      </div>
+                      <div class="colRight">
+                        <div class="bGrisICol2 alignRight">
+                          <p class="textItem" style="color: #fff">
+                            2.40
+                          </p>
+                        </div>
+                      </div>
+                      <div class="colRight">
+                        <div class="bGrisICol2 alignRight">
+                          <p class="textItem" style="color: #fff">41,800</p>
+                        </div>
+                      </div>
+                      <div class="colRight">
+                        <div class="bGrisICol2 alignRight">
+                          <p class="textItem" style="color: #fff">2.40</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="contentSection">
                   <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
                     <div class="c1">
-                      <p class="textItem3L" style="color: #fff">Services</p>
+                      <p class="textItem3L" style="color: #fff">Modules</p>
                     </div>
                     <div class="c2">
                       <p class="textItem3R" style="color: #fff"></p>
@@ -143,325 +185,613 @@
                   <div class="Flex marginTop">
                     <div class="colLeft">
                       <div class="bGrisPCol2">
-                        <p class="textItem" style="color: #fff">17,200</p>
+                        <p class="textItem" style="color: #fff">43,00</p>
                       </div>
                     </div>
                     <div class="colLeftInfo">
                       <div class="bGrisICol2 alignLeft">
-                        <p class="textItem" style="color: #fff">Solar</p>
-                      </div>
-                    </div>
-                    <div class="colRight">
-                      <div class="bGrisICol2 alignRight">
                         <p class="textItem" style="color: #fff">
-                          2.40
+                          VSUN400-108EMPOGH
                         </p>
                       </div>
                     </div>
                     <div class="colRight">
                       <div class="bGrisICol2 alignRight">
-                        <p class="textItem" style="color: #fff">41,800</p>
+                        <p class="textItem" style="color: #fff">
+                          0.00
+                        </p>
                       </div>
                     </div>
                     <div class="colRight">
                       <div class="bGrisICol2 alignRight">
-                        <p class="textItem" style="color: #fff">2.40</p>
+                        <p class="textItem" style="color: #fff">
+                          0.00
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.00</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="contentSection">
-                <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
+                <div class="contentSection">
+                  <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
+                    <div class="c1">
+                      <p class="textItem3L" style="color: #fff">Inverters</p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem3R" style="color: #fff"></p>
+                    </div>
+                  </div>
+                  <div class="Flex marginTop">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff">43,00</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Q8HEWHJ WI
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentSection">
+                  <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
+                    <div class="c1">
+                      <p class="textItem3L" style="color: #fff">Adders</p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem3R" style="color: #fff"></p>
+                    </div>
+                  </div>
+                  <div class="Flex marginTop">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Sity Survey
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">189.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">189.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.1</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Flex">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Cell Kit for Monitoring
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">500.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">500.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Flex">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          45 Days Guaranteed Install
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">750.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">750.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentSection">
+                  <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
+                    <div class="c1">
+                      <p class="textItem3L" style="color: #fff">Finance</p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem3R" style="color: #fff"></p>
+                    </div>
+                  </div>
+                  <div class="Flex marginTop">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Dealer Fee
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">7,766.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">7,766.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.45</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentSection">
+                  <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
+                    <div class="c1">
+                      <p class="textItem3L" style="color: #fff">Batteries</p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem3R" style="color: #fff"></p>
+                    </div>
+                  </div>
+                  <div class="Flex marginTop">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x2</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Batteries B
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">12,000.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">26,000.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">1.51</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Flex cont3 marginTop" style="background: #5E7E4F; padding-left: 20px;">
                   <div class="c1">
-                    <p class="textItem3L" style="color: #fff">Modules</p>
+                    <p class="textInfo3" style="text-align: left; margin-top: 0; color: #fff">
+                      Gross Price
+                    </p>
                   </div>
                   <div class="c2">
-                    <p class="textItem3R" style="color: #fff"></p>
+                    <p class="textInfo3" style="text-align: right; margin-top: 0; color: #fff; padding-right: 20px;">
+                      $0.00
+                    </p>
                   </div>
                 </div>
-                <div class="Flex marginTop">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff">43,00</p>
+              </div> <!--     informationBottom -->
+
+              <div class="informationTop">
+                <div>
+                  <img src="src/img/img_customer.png" alt="img_base" class="img" />
+                </div>
+                <div class="textCont">
+                  <h3 class="titleSection2"> Customer Items</h3>
+                </div>
+              </div><!--     top Customer Items -->
+              <div class="informationBottom">
+                <div class="info3Content">
+                  <div class="contentSection Flex">
+                    <div class="colLeftInfoIteam">
+                      <div class="bGrisICol2 borderViolet">
+                        <p class="textItemName3" style="color: #fff">ITEAM</p>
+                      </div>
+                    </div>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItemName3" style="color: #fff">PRICE</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItemName3" style="color: #fff">AMOUNT</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItemName3" style="color: #fff">PPW</p>
+                      </div>
+                    </div>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_trash.png" alt="img_trash" class="img" />
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        VSUN400-108EMPOGH
-                      </p>
+                <div class="contentSection">
+                  <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
+                    <div class="c1">
+                      <p class="textItem3L" style="color: #fff">Finance</p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem3R" style="color: #fff"></p>
                     </div>
                   </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">
-                        0.00
-                      </p>
+                  <div class="Flex marginTop">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">
-                        0.00
-                      </p>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Dealer Fee
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.00</p>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">7,766.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">7,766.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.45</p>
+                      </div>
+                    </div>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_trash.png" alt="img_trash" class="img" />
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="contentSection">
-                <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
+                <div class="contentSection">
+                  <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
+                    <div class="c1">
+                      <p class="textItem3L" style="color: #fff">Adders</p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem3R" style="color: #fff"></p>
+                    </div>
+                  </div>
+                  <div class="Flex marginTop">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          ReRoof
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">17,900.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">17,900.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">1.04</p>
+                      </div>
+                    </div>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_trash.png" alt="img_trash" class="img" />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="Flex">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Cell Kit for Monitoring
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">500.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">500.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Flex">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          45 Days Guaranteed Install
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">750.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">750.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.4</p>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="contentSection">
+                  <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
+                    <div class="c1">
+                      <p class="textItem3L" style="color: #fff">Debit</p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem3R" style="color: #fff"></p>
+                    </div>
+                  </div>
+                  <div class="Flex marginTop">
+                    <div class="colLeft">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
+                      </div>
+                    </div>
+                    <div class="colLeftInfo">
+                      <div class="bGrisICol2 alignLeft">
+                        <p class="textItem" style="color: #fff">
+                          Sales Agent Adjustment
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
+                        </p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">6,093.37</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.00</p>
+                      </div>
+                    </div>
+                    <div class="colRight">
+                      <div class="bGrisICol2 alignRight">
+                        <p class="textItem" style="color: #fff">0.35</p>
+                      </div>
+                    </div>
+                    <div class="colRightImg">
+                      <div class="bGrisPCol2">
+                        <p class="textItem" style="color: #fff; text-align: center;"> 
+                          <img src="src/img/img_trash.png" alt="img_trash" class="img" />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="Flex">  <!--- MAS -->
+                      <div class="colRightImg">
+                        <div class="bGrisPCol2">
+                          <p class="textItem" style="color: #fff; text-align: center;"> 
+                            <img src="src/img/img_mas.png" alt="img_mas" class="img" />
+                          </p>
+                        </div>
+                      </div>
+                      <div class="colLeft">
+                        <div class="bGrisPCol2">
+                          <p class="textItem" style="color: #fff; text-align: center;">- </p>
+                        </div>
+                      </div>
+                      <div class="colLeftInfoEmpty">
+                        <div class="bGrisICol2 alignLeft">
+                          <p class="textItem" style="color: #fff">
+                            -
+                          </p>
+                        </div>
+                      </div>
+                      <div class="colRightImg">
+                        <div class="bGrisPCol2">
+                          <p class="textItem" style="color: #fff; text-align: center;"> 
+                            <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
+                          </p>
+                        </div>
+                      </div>
+                      <div class="colRight">
+                        <div class="bGrisICol2 alignRight">
+                          <p class="textItem" style="color: #fff">-</p>
+                        </div>
+                      </div>
+                      <div class="colRight">
+                        <div class="bGrisICol2 alignRight">
+                          <p class="textItem" style="color: #fff">-</p>
+                        </div>
+                      </div>
+                      <div class="colRight">
+                        <div class="bGrisICol2 alignRight">
+                          <p class="textItem" style="color: #fff">-</p>
+                        </div>
+                      </div>
+                      <div class="colRightImg">
+                        <div class="bGrisPCol2">
+                          <p class="textItem" style="color: #fff; text-align: center;"> 
+                            <img src="src/img/img_trash.png" alt="img_trash" class="img" />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Flex cont3 marginTop" style="background: #7A6082; ; padding-left: 20px;">
                   <div class="c1">
-                    <p class="textItem3L" style="color: #fff">Inverters</p>
+                    <p class="textInfo3" style="text-align: left; margin-top: 0; color: #fff">
+                      Gross Price
+                    </p>
                   </div>
                   <div class="c2">
-                    <p class="textItem3R" style="color: #fff"></p>
+                    <p class="textInfo3" style="text-align: right; margin-top: 0; color: #fff; padding-right: 20px;">
+                      $0.00
+                    </p>
                   </div>
                 </div>
-                <div class="Flex marginTop">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff">43,00</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        Q8HEWHJ WI
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.00</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="contentSection">
-                <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
-                  <div class="c1">
-                    <p class="textItem3L" style="color: #fff">Adders</p>
-                  </div>
-                  <div class="c2">
-                    <p class="textItem3R" style="color: #fff"></p>
-                  </div>
-                </div>
-                <div class="Flex marginTop">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        Sity Survey
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">189.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">189.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.1</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="Flex">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        Cell Kit for Monitoring
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">500.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">500.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.3</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="Flex">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        45 Days Guaranteed Install
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">750.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">750.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.4</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="contentSection">
-                <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
-                  <div class="c1">
-                    <p class="textItem3L" style="color: #fff">Finance</p>
-                  </div>
-                  <div class="c2">
-                    <p class="textItem3R" style="color: #fff"></p>
-                  </div>
-                </div>
-                <div class="Flex marginTop">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        Dealer Fee
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">7,766.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">7,766.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.45</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="contentSection">
-                <div class="col3 bGris borderGreen" style="background-color: rgba(68, 68, 68, 0.39)">
-                  <div class="c1">
-                    <p class="textItem3L" style="color: #fff">Batteries</p>
-                  </div>
-                  <div class="c2">
-                    <p class="textItem3R" style="color: #fff"></p>
-                  </div>
-                </div>
-                <div class="Flex marginTop">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff; text-align: center;"> x2</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        Batteries B
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">12,000.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">26,000.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">1.51</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="Flex cont3 marginTop" style="background: #5E7E4F; padding-left: 20px;">
-                <div class="c1">
-                  <p class="textInfo3" style="text-align: left; margin-top: 0; color: #fff">
-                    Gross Price
-                  </p>
-                </div>
-                <div class="c2">
-                  <p class="textInfo3" style="text-align: right; margin-top: 0; color: #fff">
-                    $0.00
-                  </p>
-                </div>
-              </div>
-            </div> <!--     informationBottom -->
+              </div>  <!--     informationBottom -->
 
             <div class="informationTop">
               <div>
-                <img src="src/img/img_customer.png" alt="img_base" class="img" />
+                <img src="src/img/img_sales.png" alt="img_base" class="img" />
               </div>
               <div class="textCont">
-                <h3 class="titleSection2"> Customer Items</h3>
+                <h3 class="titleSection2">Sales Agent Items</h3>
               </div>
             </div><!--     top Customer Items -->
             <div class="informationBottom">
               <div class="info3Content">
                 <div class="contentSection Flex">
                   <div class="colLeftInfoIteam">
-                    <div class="bGrisICol2 borderViolet">
+                    <div class="bGrisICol2 borderBlue">
                       <p class="textItemName3" style="color: #fff">ITEAM</p>
                     </div>
                   </div>
                   <div class="colRightImg">
                     <div class="bGrisPCol2">
                       <p class="textItem" style="color: #fff; text-align: center;"> 
-                        <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
+                        <img src="src/img/img_flechas_up.png" alt="img_flechas" class="img" />
                       </p>
                     </div>
                   </div>
@@ -489,7 +819,7 @@
                   </div>
                 </div>
               <div class="contentSection">
-                <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
+                <div class="col3 bGris borderBlue" style="background-color: rgba(68, 68, 68, 0.39)">
                   <div class="c1">
                     <p class="textItem3L" style="color: #fff">Finance</p>
                   </div>
@@ -513,7 +843,7 @@
                   <div class="colRightImg">
                     <div class="bGrisPCol2">
                       <p class="textItem" style="color: #fff; text-align: center;"> 
-                        <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
+                        <img src="src/img/img_flechas_up.png" alt="img_flechas" class="img" />
                       </p>
                     </div>
                   </div>
@@ -540,7 +870,59 @@
                     </div>
                   </div>
                 </div>
+                <div class="Flex">  <!--- MAS -->
+                  <div class="colRightImg">
+                    <div class="bGrisPCol2">
+                      <p class="textItem" style="color: #fff; text-align: center;"> 
+                        <img src="src/img/img_mas.png" alt="img_mas" class="img" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="colLeft">
+                    <div class="bGrisPCol2">
+                      <p class="textItem" style="color: #fff; text-align: center;">- </p>
+                    </div>
+                  </div>
+                  <div class="colLeftInfoEmpty">
+                    <div class="bGrisICol2 alignLeft">
+                      <p class="textItem" style="color: #fff">
+                        -
+                      </p>
+                    </div>
+                  </div>
+                  <div class="colRightImg">
+                    <div class="bGrisPCol2">
+                      <p class="textItem" style="color: #fff; text-align: center;"> 
+                        <img src="src/img/img_flechas_up.png" alt="img_flechas" class="img" />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="colRight">
+                    <div class="bGrisICol2 alignRight">
+                      <p class="textItem" style="color: #fff">-</p>
+                    </div>
+                  </div>
+                  <div class="colRight">
+                    <div class="bGrisICol2 alignRight">
+                      <p class="textItem" style="color: #fff">-</p>
+                    </div>
+                  </div>
+                  <div class="colRight">
+                    <div class="bGrisICol2 alignRight">
+                      <p class="textItem" style="color: #fff">-</p>
+                    </div>
+                  </div>
+                  <div class="colRightImg">
+                    <div class="bGrisPCol2">
+                      <p class="textItem" style="color: #fff; text-align: center;"> 
+                        <img src="src/img/img_trash.png" alt="img_trash" class="img" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+            <!--  
               <div class="contentSection">
                 <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
                   <div class="c1">
@@ -593,64 +975,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="Flex">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        Cell Kit for Monitoring
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">500.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">500.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.3</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="Flex">
-                  <div class="colLeft">
-                    <div class="bGrisPCol2">
-                      <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                    </div>
-                  </div>
-                  <div class="colLeftInfo">
-                    <div class="bGrisICol2 alignLeft">
-                      <p class="textItem" style="color: #fff">
-                        45 Days Guaranteed Install
-                      </p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">750.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">750.00</p>
-                    </div>
-                  </div>
-                  <div class="colRight">
-                    <div class="bGrisICol2 alignRight">
-                      <p class="textItem" style="color: #fff">0.4</p>
-                    </div>
-                  </div>
-                </div> -->
+
               </div>
               <div class="contentSection">
                 <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
@@ -704,248 +1029,24 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="Flex cont3 marginTop" style="background: #7A6082; ; padding-left: 20px;">
+              </div> -->
+              <div class="Flex cont3 marginTop" style="background: #5D788C; ; padding-left: 20px;">
                 <div class="c1">
                   <p class="textInfo3" style="text-align: left; margin-top: 0; color: #fff">
                     Gross Price
                   </p>
                 </div>
                 <div class="c2">
-                  <p class="textInfo3" style="text-align: right; margin-top: 0; color: #fff">
+                  <p class="textInfo3" style="text-align: right; margin-top: 0; color: #fff; padding-right: 20px;">
                     $0.00
                   </p>
                 </div>
-              </div>
+              </div> 
             </div> 
 
             </div> <!--     informationBottom -->
-
-          <div class="informationTop">
-            <div>
-              <img src="src/img/img_sales.png" alt="img_base" class="img" />
-            </div>
-            <div class="textCont">
-              <h3 class="titleSection2">Sales Agent Items</h3>
-            </div>
-          </div><!--     top Customer Items -->
-          <div class="informationBottom">
-            <div class="info3Content">
-              <div class="contentSection Flex">
-                <div class="colLeftInfoIteam">
-                  <div class="bGrisICol2 borderBlue">
-                    <p class="textItemName3" style="color: #fff">ITEAM</p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_flechas_up.png" alt="img_flechas" class="img" />
-                    </p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItemName3" style="color: #fff">PRICE</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItemName3" style="color: #fff">AMOUNT</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItemName3" style="color: #fff">PPW</p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_trash.png" alt="img_trash" class="img" />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            <div class="contentSection">
-              <div class="col3 bGris borderBlue" style="background-color: rgba(68, 68, 68, 0.39)">
-                <div class="c1">
-                  <p class="textItem3L" style="color: #fff">Finance</p>
-                </div>
-                <div class="c2">
-                  <p class="textItem3R" style="color: #fff"></p>
-                </div>
-              </div>
-              <div class="Flex marginTop">
-                <div class="colLeft">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                  </div>
-                </div>
-                <div class="colLeftInfo">
-                  <div class="bGrisICol2 alignLeft">
-                    <p class="textItem" style="color: #fff">
-                      Dealer Fee
-                    </p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_flechas_up.png" alt="img_flechas" class="img" />
-                    </p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">7,766.00</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">7,766.00</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">0.45</p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_trash.png" alt="img_trash" class="img" />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <!--  
-            <div class="contentSection">
-              <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
-                <div class="c1">
-                  <p class="textItem3L" style="color: #fff">Adders</p>
-                </div>
-                <div class="c2">
-                  <p class="textItem3R" style="color: #fff"></p>
-                </div>
-              </div>
-              <div class="Flex marginTop">
-                <div class="colLeft">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                  </div>
-                </div>
-                <div class="colLeftInfo">
-                  <div class="bGrisICol2 alignLeft">
-                    <p class="textItem" style="color: #fff">
-                      ReRoof
-                    </p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
-                    </p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">17,900.00</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">17,900.00</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">1.04</p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_trash.png" alt="img_trash" class="img" />
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="contentSection">
-              <div class="col3 bGris borderViolet" style="background-color: rgba(68, 68, 68, 0.39)">
-                <div class="c1">
-                  <p class="textItem3L" style="color: #fff">Debit</p>
-                </div>
-                <div class="c2">
-                  <p class="textItem3R" style="color: #fff"></p>
-                </div>
-              </div>
-              <div class="Flex marginTop">
-                <div class="colLeft">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> x1</p>
-                  </div>
-                </div>
-                <div class="colLeftInfo">
-                  <div class="bGrisICol2 alignLeft">
-                    <p class="textItem" style="color: #fff">
-                      Sales Agent Adjustment
-                    </p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_flechas.png" alt="img_flechas" class="img" />
-                    </p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">6,093.37</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">0.00</p>
-                  </div>
-                </div>
-                <div class="colRight">
-                  <div class="bGrisICol2 alignRight">
-                    <p class="textItem" style="color: #fff">0.35</p>
-                  </div>
-                </div>
-                <div class="colRightImg">
-                  <div class="bGrisPCol2">
-                    <p class="textItem" style="color: #fff; text-align: center;"> 
-                      <img src="src/img/img_trash.png" alt="img_trash" class="img" />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <div class="Flex cont3 marginTop" style="background: #5D788C; ; padding-left: 20px;">
-              <div class="c1">
-                <p class="textInfo3" style="text-align: left; margin-top: 0; color: #fff">
-                  Gross Price
-                </p>
-              </div>
-              <div class="c2">
-                <p class="textInfo3" style="text-align: right; margin-top: 0; color: #fff">
-                  $0.00
-                </p>
-              </div>
-            </div> 
-          </div> 
-
-        </div> <!--     informationBottom -->
-
-         </div>  <!--     contCol1 -->
-        </div>   <!--  Info col1 --> 
+          </div>  <!--     contCol1 -->
+          </div>   <!--  Info col1 --> 
           <div class="infoCol2">
             <div class="contCol2">
             <div class="informationTop">
@@ -960,552 +1061,372 @@
                 </p>
               </div>
             </div>
-            <div class="informationBottom">
-              <h3 class="sectionTwoTableTitle bordeAma">PROJECT DETAILS</h3>
-              <table class="projectDetailsTable">
-                <thead class="projectDetailsTHead">
-                  <tr class="projectDetailsTr">
-                    <th>ITEAM</th>
-                    <th>Amount</th>
-                    <th>Dealer Free</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="projectDetailsTr bgTrTd">
-                    <td>Primary Finance:</td>
-                    <td>33,142,72</td>
-                    <td>Sunrun Freedom - 0%</td>
-                  </tr>
-                  <tr class="projectDetailsTr bgTrTd">
-                    <td>Secondary Finance:</td>
-                    <td>Sunrun Sade Harbor</td>
-                    <td>-</td>
-                  </tr>
-                  <tr class="projectDetailsTr bgTrTd">
-                    <td>Tertiary Finance:</td>
-                    <td>Sunrun</td>
-                    <td>-</td>
-                  </tr>
-                  <tr class="projectDetailsTr bgTrTd">
-                    <td>Dealer:</td>
-                    <td>Net Metering System</td>
-                    <td>-</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="informationBottom" style="margin-bottom: 10%;">
+              <div> <!---TABLA DE PROJECT DETAILS-->
+                  <h3 class="sectionTwoTableTitle bordeAma">PROJECT DETAILS</h3>
+                  <table class="projectDetailsTable">
+                    <thead class="projectDetailsTHead">
+                      <tr class="projectDetailsTr">
+                        <th>ITEAM</th>
+                        <th>Amount</th>
+                        <th>Dealer Free</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="projectDetailsTr bgTrTd">
+                        <td>Primary Finance:</td>
+                        <td>33,142,72</td>
+                        <td>Sunrun Freedom - 0%</td>
+                      </tr>
+                      <tr class="projectDetailsTr bgTrTd">
+                        <td>Secondary Finance:</td>
+                        <td>Sunrun Sade Harbor</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="projectDetailsTr bgTrTd">
+                        <td>Tertiary Finance:</td>
+                        <td>Sunrun</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="projectDetailsTr bgTrTd">
+                        <td>Dealer:</td>
+                        <td>Net Metering System</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
-          </div>
-          </div>
-        </div>
-    </section>
-    <!--Section3 -->
-    <section id="section3" class="section3Sow">
-      <div class="infoSection3ColSold">
-        <h3 class="section3Title">Sold Scope of Work</h3>
-        <p class="dateStyle">05/08/2023</p>
-        <div class="img3Content">
-          <div class="imgContainer">
-            <div class="mapOverlay">
-              <p>{apiData.project.clientAddress}</p>
             </div>
-            <!-- /*{apiData.satelitalImage}*/ -->
-            <img src="src/img/img_maps.png" alt="img_house_maps" class="satelitalImage" />
-          </div>
-        </div>
-        <div class="info3Content">
-          <p class="textInfo3 cont3">Sold Sow</p>
-          <div class="col3">
-            <div class="c1">
-              <p class="textItemName3">ITEAM</p>
-            </div>
-            <div class="c2">
-              <p class="textItemName3">DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="contentSection">
-            <div class="col3 bGris">
-              <div class="c1">
-                <p class="textItem3L">Solar Panel</p>
-              </div>
-              <div class="c2">
-                <p class="textItem3R"> $0.00</p>
-              </div>
-            </div>
-            <div class="Flex marginTop">
-              <div class="colLeft">
-                <div class="bGrisP">
-                  <p class="textItem">x15u</p>
-                </div>
-              </div>
-              <div class="colRight">
-                <div class="bGrisI alignLeft">
-                  <p class="textItem">Panel Hanwha Q</p>
-                </div>
-                <div class="bGrisI colorModelCol2 alignLeft">
-                  <p class="textItem padBottom">
-                    CELLS Q.PEAK DUO PLK
+
+            <div class="contentSection">   <!--- LISTA DE ABAJO DE TABLA-->
+              <div class="col3 bGris" style="background-color: rgba(169, 169, 169, 0.3);">
+                <div class="c1">
+                  <p class="textItem" style="color: #fff; text-align: left;">
+                    Sold PPW:
                   </p>
-                  <p class="textItem">ML-G10+ 400</p>
                 </div>
-                <div class="col3 bGrisI marginTop">
-                  <div class="c1">
-                    <p class="textItem">System Size</p>
+                <div class="c2">
+                  <p class="textItem" style="color: #fff; text-align: right;"> 3.2317</p>
+                </div>
+              </div>
+              <div class="col3 bGris" style="background-color: rgba(169, 169, 169, 0.3);">
+                <div class="c1">
+                  <p class="textItem" style="color: #fff">Net PPW:</p>
+                </div>
+                <div class="c2">
+                  <p class="textItem" style="color: #fff"></p>
+                </div>
+              </div>
+              <div class="col3 bGris" style="background-color: rgba(169, 169, 169, 0.3);">
+                <div class="c1">
+                  <p class="textItem" style="color: #fff">
+                    Dealer Fee
+                  </p>
+                </div>
+                <div class="c2">
+                  <p class="textItem" style="color: #fff; align-self: right;">3.2317</p>
+                </div>
+              </div>
+              <div class="col3 bGris" style="background-color: rgba(169, 169, 169, 0.3);">
+                <div class="c1">
+                  <p class="textItem" style="color: #fff">Finance</p>
+                </div>
+                <div class="c2">
+                  <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                </div>
+              </div>
+              <div class="col3 bGrisMenor" style="background-color: rgba(69, 69, 69, 0.3);">
+                <div class="c1">
+                  <p class="textItem" style="color: #fff">PowerSwitch Choice 9 a 25 1059 N30 v2</p>
+                </div>
+                <div class="c2">
+                  <p class="textItem" style="color: #fff"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contentSection" style="margin-top: 10%;">   <!---DECISION -->
+              <div class="col3 bGris bordeAma" style="background-color: rgba(169, 169, 169, 0.3);">
+                <div class="c1">
+                  <p class="textItemName3" style="color: #fff; text-align: left;">
+                    DECISION
+                  </p>
+                </div>
+                <div class="c2">
+                  <p class="textItem" style="color: #fff; text-align: right;"></p>
+                </div>
+              </div>
+
+              <div class="Flex" style="margin:0">
+                <div class="colFlexDec">
+                  <div class="col3 colBase borderGreen" style="background-color: rgba(69, 69, 69, 0.3); padding: 0;"> 
+                      <div class="Flex">
+                        <div>
+                          <img src="src/img/img_base_decision.png" alt="img_base" class="img" />
+                        </div>
+                        <div class="textCont">
+                          <p class="textItem" style="color: #fff">Base Items</p>
+                        </div>
+                      </div>
                   </div>
-                  <div class="c2">
-                    <p class="textItem">9,280</p>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3);">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+                  <div class="col3 colBase borderViolet" style="background-color:  rgba(69, 69, 69, 0.3);">
+                    <div class="Flex">
+                      <div>
+                        <img src="src/img/img_customer_decision.png" alt="img_base" class="img" />
+                      </div>
+                      <div class="textCont">
+                        <p class="textItem" style="color: #fff">Customer Items</p>
+                      </div>
+                    </div>               
+                  </div>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3);">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+                  <div class="col3 colBase borderBlue" style="background-color:  rgba(69, 69, 69, 0.3);">
+                    <div class="Flex">
+                      <div>
+                        <img src="src/img/img_sales_decision.png" alt="img_base" class="img" />
+                      </div>
+                      <div class="textCont" style="padding-left: 8px;">
+                        <p class="textItem" style="color: #fff">Sales Agent Items</p>
+                      </div>
+                    </div>               
+                  </div>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3);">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+
+                  <div class="col3 colBase bordeAma" style="background-color:  rgba(69, 69, 69, 0.3);">
+                    <div class="c1">
+                      <p class="textItem" style="color: #fff; text-align: left;">
+                        TOTAL
+                      </p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;"> 11.30</p>
+                    </div>         
                   </div>
                 </div>
-                <div class="col3 bGrisI marginTop">
-                  <div class="c1">
-                    <p class="textItem">PG % Offset</p>
+                <div class="colFlexDec">
+                  <div class="col3 colBase borderGreen" style="background-color: rgba(69, 69, 69, 0.3); padding: 0;"> 
+                      <div class="Flex">
+                        <div>
+                          <img src="src/img/img_base_decision.png" alt="img_base" class="img" />
+                        </div>
+                        <div class="textCont">
+                          <p class="textItem" style="color: #fff">Base Items</p>
+                        </div>
+                      </div>
                   </div>
-                  <div class="c2">
-                    <p class="textItem">%</p>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3);">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+                  <div class="col3 colBase borderViolet" style="background-color:  rgba(69, 69, 69, 0.3);">
+                    <div class="Flex">
+                      <div>
+                        <img src="src/img/img_customer_decision.png" alt="img_base" class="img" />
+                      </div>
+                      <div class="textCont">
+                        <p class="textItem" style="color: #fff">Customer PPW</p>
+                      </div>
+                    </div>               
+                  </div>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3);">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+                  <div class="col3 colBase borderBlue" style="background-color:  rgba(69, 69, 69, 0.3);">
+                    <div class="Flex">
+                      <div>
+                        <img src="src/img/img_sales_decision.png" alt="img_base" class="img" />
+                      </div>
+                      <div class="textCont" >
+                        <p class="textItem" style="color: #fff">Sales Agent PPW</p>
+                      </div>
+                    </div>               
+                  </div>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3);">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+
+                  <div class="col3 colBase bordeAma" style="background-color:  rgba(69, 69, 69, 0.3);">
+                    <div class="c1">
+                      <p class="textItem" style="color: #fff; text-align: left;">
+                        TOTAL PPW
+                      </p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;"> 11.30</p>
+                    </div>         
+                  </div>
+                  <div class="Flex">
+                    <div class="col3 colBase bordeAma" style="background-color:  rgba(69, 69, 69, 0.3);">
+                      <div class="c1">
+                        <p class="textItem" style="color: #fff; text-align: left;">
+                          Base Price
+                        </p>
+                      </div>
+                      <div class="c2">
+                        <p class="textItem" style="color: #fff; text-align: right;"> 11.30</p>
+                      </div>         
+                    </div>
+                    <div class="colFlecha">
+                      <img src="src/img/img_flecha_atras.png" alt="img_base" class="img" />
+                    </div>
+                  </div>
+
+                  <div class="Flex">
+                    <div class="col3 colBase bordeAma" style="background-color:  rgba(69, 69, 69, 0.3);">
+                      <div class="c1">
+                        <p class="textItem" style="color: #fff; text-align: left;">
+                          Net PPW
+                        </p>
+                      </div>
+                      <div class="c2">
+                        <p class="textItem" style="color: #fff; text-align: right;"> 11.30</p>
+                      </div>         
+                    </div>
+                    <div class="colFlecha">
+                      <img src="src/img/img_flecha_atras.png" alt="img_base" class="img" />
+                    </div>
+                  </div>
+                </div>
+                <div class="colFlexDec">
+                  <div class="col3 colBase borderGreen" style="background-color: rgba(69, 69, 69, 0.3); padding: 0; opacity: 0;"> 
+                      <div class="Flex">
+                        <div>
+                          <img src="src/img/img_base_decision.png" alt="img_base" class="img" />
+                        </div>
+                        <div class="textCont">
+                          <p class="textItem" style="color: #fff">Base Items</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3); opacity: 0;">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+                  <!-- ESTE VA CUSTOMER NEW TOTAL-->
+                  <div class="col3 colBase bordeAma" style="background-color:  rgba(69, 69, 69, 0.3);">
+                    <div class="Flex">
+                      <div>
+                        <img src="src/img/img_sales_yellow.png" alt="img_base" class="img" />
+                      </div>
+                      <div class="textCont" style="padding-left: 8px;">
+                        <p class="textItem" style="color: #fff">Customer New Total</p>
+                      </div>
+                    </div>               
+                  </div>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3);">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="col3 colBase borderBlue" style="background-color:  rgba(69, 69, 69, 0.3); opacity: 0;">
+                    <div class="Flex">
+                      <div>
+                        <img src="src/img/img_sales_decision.png" alt="img_base" class="img" />
+                      </div>
+                      <div class="textCont" style="padding-left: 8px;">
+                        <p class="textItem" style="color: #fff">Sales Agent Items</p>
+                      </div>
+                    </div>               
+                  </div>
+                  <div class="col3 colBaseMenor" style="background-color: rgba(169, 169, 169, 0.3); opacity: 0;">
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;">11.30</p>
+                    </div>
+                  </div>
+
+                  <div class="col3 colBase bordeAma" style="background-color:  rgba(69, 69, 69, 0.3); opacity: 0;">
+                    <div class="c1">
+                      <p class="textItem" style="color: #fff; text-align: left;">
+                        TOTAL
+                      </p>
+                    </div>
+                    <div class="c2">
+                      <p class="textItem" style="color: #fff; text-align: right;"> 11.30</p>
+                    </div>         
                   </div>
                 </div>
               </div>
+              
+            </div> <!-- FIN DECISION SECTION-->
+          </div>
+          </div>
+        </div>
+
+        <div class="section2 borderSectionMaps">
+            
+          <div class="contImgBefore">
+
+            <div class="informationTop">
+              <div>
+                <img src="src/img/img_before.png" alt="img_before" class="img" />
+              </div>
+              <div class="textCont">
+                <h3 class="titleSection2"> Before </h3>
+              </div>
+            </div>
+
+            <div class="img3Content">
+              <div class="imgContainer">
+                  <div class="mapOverlay">
+                    <p>{apiData.project.clientAddress}</p>
+                  </div>
+                  <!-- /*{apiData.satelitalImage}*/ -->
+                  <img src="src/img/img_maps.png" alt="img_house_maps" class="satelitalImage" />
+                </div>
             </div>
           </div>
-          <div class="contentSection">
-            <div class="col3 bGris">
-              <div class="c1">
-                <p class="textItem3L">Inverters</p>
+
+          <div class="contImgAfter">
+
+            <div class="informationTop">
+              <div>
+                <img src="src/img/img_after.png" alt="img_after" class="img" />
               </div>
-              <div class="c2">
-                <p class="textItem3R">$value</p>
-              </div>
-            </div>
-            <div class="Flex marginTop">
-              <div class="colLeft">
-                <div class="bGrisP">
-                  <p class="textItem">x1u</p>
-                </div>
-              </div>
-              <div class="colRight">
-                <div class="bGrisI alignLeft">
-                  <p class="textItem">Inverters 1 x SolarEdge</p>
-                </div>
-                <div class="bGrisI colorModel alignLeft">
-                  <p class="textItem">SE6000H-US EnergyHub</p>
-                </div>
+              <div class="textCont">
+                <h3 class="titleSection2"> After </h3>
               </div>
             </div>
-          </div>
-          <div class="contentSection">
-            <div class="col3 bGris">
-              <div class="c1">
-                <p class="textItem3L">Batteries</p>
-              </div>
-              <div class="c2">
-                <p class="textItem3R">$value</p>
-              </div>
-            </div>
-            <div class="Flex marginTop">
-              <div class="colLeft">
-                <div class="bGrisP">
-                  <p class="textItem">x1u</p>
-                </div>
-              </div>
-              <div class="colRight">
-                <div class="bGrisI alignLeft">
-                  <p class="textItem">Enphase IQ Battery 5P</p>
-                </div>
-                <div class="col3 bGrisI colorModel">
-                  <div class="c1 alignLeft">
-                    <p class="textItem padBottom">Annual Production</p>
-                    <p class="textItem">Degradation</p>
+
+            <div class="img3Content">
+              <div class="imgContainer">
+                  <div class="mapOverlay">
+                    <p>{apiData.project.clientAddress}</p>
                   </div>
-                  <div class="c2">
-                    <p class="textItem padBottom">6kW</p>
-                    <p class="textItem">0.5%</p>
-                  </div>
+                  <!-- /*{apiData.satelitalImage}*/ -->
+                  <img src="src/img/img_maps.png" alt="img_house_maps" class="satelitalImage" />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="contentSection">
-            <div class="col3 bGris">
-              <div class="c1">
-                <p class="textItem">Production Guarantee:</p>
-              </div>
-              <div class="c2">
-                <p class="textItem">0</p>
-              </div>
-            </div>
-            <div class="col3 bGris">
-              <div class="c1">
-                <p class="textItem">Sold PPW:</p>
-              </div>
-              <div class="c2">
-                <p class="textItem">3.2317</p>
-              </div>
             </div>
           </div>
         </div>
 
-        <div class="Flex cont3 cont3Padd marginTop">
-          <div class="c1">
-            <p class="textInfo3" style="text-align: left; margin-top: 0">
-              Gross Price
-            </p>
-          </div>
-          <div class="c2">
-            <p class="textItemName3" style="text-align: right; margin-top: 0">
-              $0.00
-            </p>
-          </div>
-        </div>
-        <div>
-
-       <!--  Parte Adders -->
-       <!-- <div class="marginTop">
-            <p class="tittles cont3 colorModel marginTop">Adders</p>
-            <div class="Flex contentSectionTab">
-              <table class="addersTable">
-                
-                <tbody class="addersTbody">
-                  <tr class="addersTr">
-                    <td>
-                      Solar Stimulus Check CA - $1000 (Added in New Deal stage)
-                    </td>
-                    <td>$0.00</td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td class="textTable">
-                      Solar Stimulus Monthly Payments - $6 (Added in New Deal
-                      stage)
-                    </td>
-                    <td>$0.00</td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td>
-                      Module Upgrade - $694.4 (Added in Project Review stage)
-                    </td>
-                    <td>$0.00</td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td>
-                      Multiple Arrays - $900 (Added in Project Review stage)
-                    </td>
-                    <td>$0.00</td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td>
-                      Inverter in Garage - $240 (Added in Project Review stage)
-                    </td>
-                    <td>$0.00</td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td>Solar Stimulus Check CA Notes:</td>
-                    <td></td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td>Solar Stimulus Monthly Payments Notes: 6 for 6</td>
-                    <td>$0.00</td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td>
-                      Module Upgrade Notes: Sunrun Modules Approved QCell 320s
-                    </td>
-                    <td>$0.00</td>
-                  </tr>
-                  <tr class="addersTr">
-                    <td>Multiple Arrays Notes: Three (3) Additional Arrays</td>
-                    <td>$0.00</td>
-                  </tr>
-    
-                  <tr class="addersTr">
-                    <td>Inverter in Garage Notes</td>
-                    <td>$0.00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="Flex cont3 colorGross cont3Padd">
-              <div class="c1">
-                <p class="textInfo3" style="text-align: left; margin-top: 0">
-                  Gross Price
-                </p>
-              </div>
-              <div class="c2">
-                <p class="textItemName3" style="text-align: right; margin-top: 0">
-                  $0.00
-                </p>
-              </div>
-            </div>
-          </div> -->
-        </div> 
-      </div>
-      <div class="infoSection3ColProj">
-        <div class="cont3Top tcont3">  Final </div>
-        <h3 class="section3Title" style="color: #fff">Project Scope of Work</h3>
-        <p class="dateStyle" style="color: #fff">23/10/2023</p>
-        <div class="img3Content bordeAmarillo">
-          <div class="imgContainer">
-            <div class="mapOverlay">
-              <p>{apiData.project.clientAddress}</p>
-            </div>
-            <!-- /*{apiData.satelitalImage}*/ -->
-            <img src="src/img/img_maps.png" alt="img_house_maps" class="satelitalImage" />
-          </div>
-        </div>
-        <div class="info3Content">
-          <p class="textInfo3 cont3 bordeAma" style="color: #fff; background-color: rgba(170, 170, 170, 0.4)">
-            Sold Sow
-          </p>
-          <div class="col3 bordeAma" style="background: rgba(80, 80, 80, 0.4)">
-            <div class="c1">
-              <p class="textItemName3" style="color: #fff">ITEAM</p>
-            </div>
-            <div class="c2">
-              <p class="textItemName3" style="color: #fff">DESCRIPTION</p>
-            </div>
-          </div>
-          <div class="contentSection">
-            <div class="col3 bGris bordeAma" style="background-color: rgba(68, 68, 68, 0.39)">
-              <div class="c1">
-                <p class="textItem3L" style="color: #fff">Solar Panel</p>
-              </div>
-              <div class="c2">
-                <p class="textItem3R" style="color: #fff">$value</p>
-              </div>
-            </div>
-            <div class="Flex marginTop">
-              <div class="colLeft">
-                <div class="bGrisPCol2">
-                  <p class="textItem" style="color: #fff">x15u</p>
-                </div>
-              </div>
-              <div class="colRight">
-                <div class="bGrisICol2 alignLeft">
-                  <p class="textItem" style="color: #fff">Panel Hanwha Q</p>
-                </div>
-                <div class="bGrisICol2 colorModelCol2 alignLeft">
-                  <p class="textItem padBottom" style="color: #fff">
-                    CELLS Q.PEAK DUO PLK
-                  </p>
-                  <p class="textItem" style="color: #fff">ML-G10+ 400</p>
-                </div>
-                <div class="col3 bGrisICol2 marginTop">
-                  <div class="c1">
-                    <p class="textItem" style="color: #fff">System Size</p>
-                  </div>
-                  <div class="c2">
-                    <p class="textItem" style="color: #fff">9,280</p>
-                  </div>
-                </div>
-                <div class="col3 bGrisICol2 marginTop">
-                  <div class="c1">
-                    <p class="textItem" style="color: #fff">PG % Offset</p>
-                  </div>
-                  <div class="c2">
-                    <p class="textItem" style="color: #fff">%</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contentSection">
-            <div class="col3 bGris bordeAma" style="background-color: rgba(68, 68, 68, 0.39)">
-              <div class="c1">
-                <p class="textItem3L" style="color: #fff">Inverters</p>
-              </div>
-              <div class="c2">
-                <p class="textItem3R" style="color: #fff">$value</p>
-              </div>
-            </div>
-            <div class="Flex marginTop">
-              <div class="colLeft">
-                <div class="bGrisPCol2">
-                  <p class="textItem" style="color: #fff">x1u</p>
-                </div>
-              </div>
-              <div class="colRight">
-                <div class="bGrisICol2 alignLeft">
-                  <p class="textItem" style="color: #fff">
-                    Inverters 1 x SolarEdge
-                  </p>
-                </div>
-                <div class="bGrisICol2 colorModelCol2 alignLeft">
-                  <p class="textItem" style="color: #fff">
-                    SE6000H-US EnergyHub
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contentSection">
-            <div class="col3 bGris bordeAma" style="background-color: rgba(68, 68, 68, 0.39)">
-              <div class="c1">
-                <p class="textItem3L" style="color: #fff">Batteries</p>
-              </div>
-              <div class="c2">
-                <p class="textItem3R" style="color: #fff">$value</p>
-              </div>
-            </div>
-            <div class="Flex marginTop">
-              <div class="colLeft">
-                <div class="bGrisPCol2">
-                  <p class="textItem" style="color: #fff">x1u</p>
-                </div>
-              </div>
-              <div class="colRight">
-                <div class="bGrisICol2 alignLeft">
-                  <p class="textItem" style="color: #fff">
-                    Enphase IQ Battery 5P
-                  </p>
-                </div>
-                <div class="col3 bGrisICol2 colorModelCol2">
-                  <div class="c1 alignLeft">
-                    <p class="textItem padBottom" style="color: #fff">
-                      Annual Production
-                    </p>
-                    <p class="textItem" style="color: #fff">Degradation</p>
-                  </div>
-                  <div class="c2">
-                    <p class="textItem padBottom" style="color: #fff">6kW</p>
-                    <p class="textItem" style="color: #fff">0.5%</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contentSection">
-            <div class="col3 bGris bordeAma" style="background-color: rgba(68, 68, 68, 0.39)">
-              <div class="c1">
-                <p class="textItem" style="color: #fff">
-                  Production Guarantee:
-                </p>
-              </div>
-              <div class="c2">
-                <p class="textItem" style="color: #fff">0</p>
-              </div>
-            </div>
-            <div class="col3 bGris bordeAma" style="background-color: rgba(68, 68, 68, 0.39)">
-              <div class="c1">
-                <p class="textItem" style="color: #fff">Net PPW:</p>
-              </div>
-              <div class="c2">
-                <p class="textItem" style="color: #fff">3.2317</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="Flex cont3 cont3Padd marginTop" style="background: #ffb800">
-          <div class="c1">
-            <p class="textInfo3" style="text-align: left; margin-top: 0; color: #fff">
-              Gross Price
-            </p>
-          </div>
-          <div class="c2">
-            <p class="textItemName3" style="text-align: right; margin-top: 0; color: #fff">
-              $0.00
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="ContAdders">
-        <div class="contRef">
-          <div class="borderGreen add">
-            Added in POW
-          </div>
-          <div class="borderGris add">
-            Kept from SOW
-          </div>
-          <div class="borderRed add">
-            Removed from SOW
-          </div>        
-        </div>
-        <!-- Parte Adders -->
-        <div class="marginTop">
-          <div>
-            <p class="tittles cont3 marginTop bordeAma" style="background:rgba(70, 70, 70, 0.86); color: #fff">
-              Adders
-            </p>
-            <div class="Flex contentSectionTabCol2">
-              <table class="addersTableCol2 colorModelCol2">
-                <tbody class="addersTbody">
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderGris">
-                      Solar Stimulus Check CA - $1000 (Added in New Deal stage)
-                    </td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderGris">
-                      Solar Stimulus Monthly Payments - $6 (Added in New Deal
-                      stage)
-                    </td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderGris">
-                      Module Upgrade - $694.4 (Added in Project Review stage)
-                    </td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderRed">
-                      Multiple Arrays - $900 (Added in Project Review stage)
-                    </td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderRed">
-                      Inverter in Garage - $240 (Added in Project Review stage)
-                    </td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderRed">Solar Stimulus Check CA Notes:</td>
-                    <td></td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderRed">Solar Stimulus Monthly Payments Notes: 6 for 6</td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderGreen">
-                      Solar Stimulus Monthly Payments Notes: 6 for 6
-                    </td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderGreen">Module Upgrade Notes: Sunrun Modules Approved QCell 320s</td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-    
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderGreen">Multiple Arrays Notes: Three (3) Additional Arrays</td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                  <tr class="addersTrCol2">
-                    <td class="textTable borderGreen">Inverter in Garage Notes</td>
-                    <td class="textCenter">$0.00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="Flex cont3" style="background: #ffb800; padding:20px">
-              <div class="c1">
-                <p class="textInfo3" style="text-align: left; margin-top: 0; color: #fff">
-                  Gross Price
-                </p>
-              </div>
-              <div class="c2">
-                <p class="textItemName3" style="text-align: right; margin-top: 0; color: #fff">
-                  $0.00
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
     </section>
-    <!--Section4 -->
-    <section id="section4" class="sectionFiveWithBackground">
+    <!--Section2 -->
+    <section id="section2" class="sectionFiveWithBackground">
     
-      <h3 class="titleSection2 aligColor">Comprehensive Installation Documentation</h3>
+      <h3 class="titleSection2 aligColor" style="font-weight: 600; font-size: 2.5rem;">Comprehensive Installation
+      </br> Documentation
+      </h3>
+      
       <div class="tableContainer">
         <h3 class="tableContainerTitle">Design Notes</h3>
         <table class="section5Table">
@@ -1611,10 +1532,11 @@
         </table>
       </div>
     </section>
-    <!--Section5-->
-    <section id="section5" class="sectionSixWithBackground">
+    <!--Section3-->
+    <section id="section3" class="sectionSixWithBackground">
       <h3 class="secSixTitle">Shade Report</h3>
       <p class="secSixSubTitle">Annual Irradiance</p>
+
       <div class="sectionSixImagesContainer">
         <img class="secSixImageOne" src="./src/img/map.png" alt="mapa">
         <img class="secSixImageTwo" src="./src/img/kmh.png" alt="kWh">
@@ -1709,8 +1631,8 @@
       </div>
       </div>
     </section>
-    <!--Section6-->
-    <section id="section6" class="sectionSixWithBackground">
+    <!--Section4-->
+    <section id="section4" class="sectionSixWithBackground">
     
       <div class="section6ImagesContainer">
         <img class="sec6ImageOne" src="./src/img/img_conect_panel.png" alt="conex">
